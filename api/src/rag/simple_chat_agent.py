@@ -33,7 +33,7 @@ class SimpleChatAgent:
         self.prompts = self._load_prompts()
     
     def get_default_retriever(self):
-        """Get the default hybrid retriever for KMA regulations"""
+        """Get the default hybrid retriever for UTCregulations"""
         current_dir = Path(__file__).parent.absolute()
         project_root = current_dir.parent.parent
         vector_db_path = os.path.join(project_root, "vector_db")

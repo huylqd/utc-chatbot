@@ -1,5 +1,5 @@
 """
-KMA Regulations Assistant - A chatbot for answering questions about 
+UTCRegulations Assistant - A chatbot for answering questions about 
 regulations at the Academy of Cryptographic Techniques (KMA).
 """
 

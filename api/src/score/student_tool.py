@@ -28,7 +28,7 @@ class GlobalDB:
 global_db = GlobalDB()
 
 @tool("get_student_info", args_schema=StudentInfoInput,
-      description=("Get KMA student information from the database. "
+      description=("Get UTCstudent information from the database. "
                  "Useful for retrieving information for a specific student. "
                  "The student code must be provided."))
 

@@ -30,7 +30,7 @@
 
 # # Helper function for score_tool.py to use
 # async def process_kma_query(query: str, retriever=None, llm=None) -> Dict[str, Any]:
-#     """Process a KMA regulation query and return the answer with sources.
+#     """Process a UTCregulation query and return the answer with sources.
     
 #     Args:
 #         query: The question to answer
@@ -68,7 +68,7 @@
 
 
 # def get_retriever():
-#     """Get the hybrid retriever for KMA regulations"""
+#     """Get the hybrid retriever for UTCregulations"""
 #     # Define paths
 #     current_dir = Path(__file__).parent.absolute()
 #     project_root = current_dir.parent.parent
@@ -82,7 +82,7 @@
 
 # class KMAChatAgent:
 #     def __init__(self, model_name="qwen3:8b", project_name="KMARegulation"):
-#         """Initialize the KMA Chat Agent with a hybrid retriever and model"""
+#         """Initialize the UTCChat Agent with a hybrid retriever and model"""
 #         # Initialize LangSmith client
 #         self.langsmith_client = Client()
 
@@ -278,7 +278,7 @@ class GradeDocuments(BaseModel):
 
 # Helper function for score_tool.py to use
 async def process_kma_query(query: str, retriever=None, llm=None) -> Dict[str, Any]:
-    """Process a KMA regulation query and return the answer with sources.
+    """Process a UTCregulation query and return the answer with sources.
     
     Args:
         query: The question to answer
@@ -669,7 +669,7 @@ def get_retriever():
 
 class KMAChatAgent:
     def __init__(self, model_name: str = None, project_name="KMARegulation", custom_retriever=None):
-        """Initialize the KMA Chat Agent with a hybrid retriever and model"""
+        """Initialize the UTCChat Agent with a hybrid retriever and model"""
         # Initialize LangSmith client
         self.langsmith_client = Client()
 
@@ -686,7 +686,7 @@ class KMAChatAgent:
             logger.error(f"Failed to initialize LLM: {e}.")
             raise # Re-raise error to stop initialization if LLM fails
 
-        # Store the retriever - use custom retriever if provided, otherwise default KMA retriever
+        # Store the retriever - use custom retriever if provided, otherwise default UTCretriever
         self.retriever = custom_retriever if custom_retriever is not None else self.get_retriever()
 
         # Load prompts from files

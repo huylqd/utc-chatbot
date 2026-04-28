@@ -4,7 +4,7 @@ import './locales/i18n';
 import App from './App';
 import './style.css';
 import './mobile.css';
-import './kma-theme.css'; // KMA Academy custom branding
+import './kma-theme.css'; // UTCAcademy custom branding
 import { ApiErrorBoundaryProvider } from './hooks/ApiErrorBoundaryContext';
 import 'katex/dist/katex.min.css';
 import 'katex/dist/contrib/copy-tex.js';

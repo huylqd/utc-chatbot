@@ -1,5 +1,5 @@
 """
-KMA Agent - Multi-agent system for KMA student queries.
+UTCAgent - Multi-agent system for UTCstudent queries.
 
 This package implements a supervisor agent using LangGraph and tool-based agents
 for handling student queries about regulations, student information, and scores.

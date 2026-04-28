@@ -52,7 +52,7 @@ const AdminLogin = ({ onLogin }) => {
         <div className="admin-login-header">
           <img 
             src="/assets/kma-logo.svg" 
-            alt="KMA Logo" 
+            alt="UTCLogo" 
             className="admin-logo" 
           />
           <h1>Quản trị hệ thống Chatbot KMA</h1>

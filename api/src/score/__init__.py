@@ -1,5 +1,5 @@
 """
-Score package for KMA Agent.
+Score package for UTCAgent.
 
 This package provides tools for accessing and processing student score data.
 """

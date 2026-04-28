@@ -66,7 +66,7 @@ const AdminSidebar: React.FC<AdminSidebarProps> = ({
       <div className="admin-sidebar-header">
         <img 
           src="/assets/kma-logo.svg" 
-          alt="KMA Logo" 
+          alt="UTCLogo" 
           className="admin-logo"
           onError={(e) => {
             (e.target as HTMLImageElement).src = '/assets/logo.svg';

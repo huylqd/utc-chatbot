@@ -21,7 +21,7 @@ class KMARegulationInput(BaseModel):
 
 
 @tool("search_kma_regulations", args_schema=KMARegulationInput,
-      description=("Search for information in KMA documents using department-specific graphs. "
+      description=("Search for information in UTCdocuments using department-specific graphs. "
                    "Each department has its own document graph to avoid cross-contamination. "
                    "Automatically detects relevant department from query if not specified. "
                    "Departments: phongdaotao (training), phongkhaothi (testing/quality), "

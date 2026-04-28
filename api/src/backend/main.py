@@ -270,7 +270,7 @@ def run_backend(port: int = 8000, host: str = "0.0.0.0", reload: bool = True):
         host: The host address to bind to
         reload: Whether to reload the server on code changes
     """
-    logger.info(f"Starting KMA Chat Agent backend on {host}:{port}")
+    logger.info(f"Starting UTCChat Agent backend on {host}:{port}")
     uvicorn.run("src.backend.main:app", host=host, port=port, reload=reload)
 
 # Command line interface using Typer
@@ -324,7 +324,7 @@ async def db_check():
 
 @cli.command()
 def start(port: int = 8000, host: str = "0.0.0.0", reload: bool = True):
-    """Run the KMA Chat Agent backend
+    """Run the UTCChat Agent backend
     
     Note: Use reload=False in production for better performance with cached GraphRAG
     """

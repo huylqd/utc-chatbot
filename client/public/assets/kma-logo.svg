@@ -3,7 +3,7 @@
   <!-- Background circle -->
   <circle cx="50" cy="50" r="48" fill="#dc2626" stroke="#ffffff" stroke-width="4"/>
   
-  <!-- KMA text -->
+  <!-- UTCtext -->
   <text x="50" y="40" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="white">KMA</text>
   
   <!-- Subtitle -->

@@ -27,7 +27,7 @@ class ScoreInput(BaseModel):
 
 
 @tool("get_student_scores", args_schema=ScoreInput,
-      description=("Get KMA student scores from the database. "
+      description=("Get UTCstudent scores from the database. "
                     "Useful for retrieving scores for a specific student. "
                     "The student code must be provided. Optionally, you can filter by semester in format ki1-2024-2025, k2-2024-2025, or some thing like that.")
                     )

@@ -16,7 +16,7 @@
   height: 12px;
 }
 
-/* Primary - KMA Red */
+/* Primary - UTCRed */
 .badge-primary {
   background-color: var(--kma-red-100);
   color: var(--kma-red-700);

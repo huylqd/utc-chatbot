@@ -1,5 +1,5 @@
 /**
- * KMA Academy Professional Theme
+ * UTCAcademy Professional Theme
  * Học viện Kỹ thuật Mật mã - Intelligent Virtual Assistant
  */
 
@@ -8,7 +8,7 @@
 
 /* Color Palette */
 :root {
-  /* Modern KMA Brand Colors */
+  /* Modern UTCBrand Colors */
   --kma-primary: #c2185b;
   --kma-primary-dark: #880e4f;
   --kma-primary-light: #e91e63;
@@ -28,7 +28,7 @@
   --outline: #8899a6;
   --outline-variant: #e1e8ed;
 
-  /* KMA Red Palette (legacy) */
+  /* UTCRed Palette (legacy) */
   --kma-red-50: #fef2f2;
   --kma-red-100: #fee2e2;
   --kma-red-200: #fecaca;

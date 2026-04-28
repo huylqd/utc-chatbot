@@ -10,7 +10,7 @@ const ChatHeader = ({ currentModel = "Gemini", department = "Default" }) => {
       <div className="header-container">
         {/* Left Section - Title & Info */}
         <div className="header-left">
-          <h1 className="chat-title">KBot - KMA Assistant</h1>
+          <h1 className="chat-title">KBot - UTCAssistant</h1>
           <p className="header-subtitle">
             Powered by Advanced RAG & Graph Technology
           </p>

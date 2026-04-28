@@ -21,7 +21,7 @@ load_dotenv()
 
 # Phần còn lại của file giữ nguyên
 class LLMConfig:
-    """Configuration for language models used in the KMA Chat Agent."""
+    """Configuration for language models used in the UTCChat Agent."""
     
     DEFAULT_RAG_MODEL_NAME = "mistral"
     DEFAULT_PROJECT_NAME = "KMA_CHAT"

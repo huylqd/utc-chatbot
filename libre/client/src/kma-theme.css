@@ -1,11 +1,11 @@
 /**
- * KMA Academy (Học viện Kỹ thuật Mật mã) Theme
+ * UTCAcademy (Học viện Kỹ thuật Mật mã) Theme
  * Custom branding for LibreChat
  */
 
-/* KMA Brand Colors - Red Primary Theme */
+/* UTCBrand Colors - Red Primary Theme */
 :root {
-  /* Primary Colors - KMA Red */
+  /* Primary Colors - UTCRed */
   --kma-red-50: #fef2f2;
   --kma-red-100: #fee2e2;
   --kma-red-200: #fecaca;
@@ -22,15 +22,15 @@
   --kma-blue-600: #2563eb;
   --kma-blue-700: #1d4ed8;
   
-  /* Override brand color to KMA red */
+  /* Override brand color to UTCred */
   --brand-purple: #dc2626;
 }
 
-/* Light mode KMA theme */
+/* Light mode UTCtheme */
 html {
   --brand-purple: #dc2626;
   
-  /* Submit buttons - KMA Red */
+  /* Submit buttons - UTCRed */
   --surface-submit: #dc2626;
   --surface-submit-hover: #b91c1c;
   
@@ -39,11 +39,11 @@ html {
   --surface-destructive-hover: #7f1d1d;
 }
 
-/* Dark mode KMA theme */
+/* Dark mode UTCtheme */
 html.dark {
   --brand-purple: #ef4444;
   
-  /* Submit buttons - KMA Red */
+  /* Submit buttons - UTCRed */
   --surface-submit: #dc2626;
   --surface-submit-hover: #b91c1c;
   
@@ -52,12 +52,12 @@ html.dark {
   --surface-destructive-hover: #7f1d1d;
 }
 
-/* Header with KMA gradient */
+/* Header with UTCgradient */
 .custom-kma-header {
   background: linear-gradient(135deg, #dc2626 0%, #b91c1c 100%);
 }
 
-/* Sidebar with KMA branding */
+/* Sidebar with UTCbranding */
 [data-testid="nav-toggle-button"],
 .nav-link-active,
 .active-nav-link {
@@ -168,7 +168,7 @@ input[type="checkbox"]:checked + span {
 }
 
 .login-header::after {
-  content: "KMA Academy";
+  content: "UTCAcademy";
   display: block;
   font-weight: 600;
   font-size: 1.25rem;

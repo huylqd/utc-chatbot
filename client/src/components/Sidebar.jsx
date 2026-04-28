@@ -27,7 +27,7 @@ const Sidebar = ({
       {/* Logo & Header */}
       <div className="sidebar-header">
         <div className="logo-container">
-          <img src="/img/kma-logo.png" alt="KMA Logo" className="kma-logo" />
+          <img src="/img/kma-logo.png" alt="UTCLogo" className="kma-logo" />
           <span className="app-title">KBot</span>
         </div>
         <button
