@@ -1,5 +1,5 @@
 """
-UTCChat Agent - Intelligent assistant for Academy of Cryptographic Techniques students.
+UTC Chat Agent - Intelligent assistant for Academy of Cryptographic Techniques students.
 
 This package provides chatbot functionality for answering student queries about 
 regulations, student information, and academic scores.

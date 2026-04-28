@@ -265,7 +265,7 @@ class ModelManager:
         Returns:
             str: System prompt.
         """
-        return self.get_model_parameter("system_prompt", "Bạn là trợ lý AI của Học viện Kỹ thuật Mật mã.")
+        return self.get_model_parameter("system_prompt", "Bạn là trợ lý AI của Đại Học Giao Thông Vận Tải.")
     
     def get_model_path(self) -> str:
         """

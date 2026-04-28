@@ -82,7 +82,7 @@
 
 # class KMAChatAgent:
 #     def __init__(self, model_name="qwen3:8b", project_name="KMARegulation"):
-#         """Initialize the UTCChat Agent with a hybrid retriever and model"""
+#         """Initialize the UTC Chat Agent with a hybrid retriever and model"""
 #         # Initialize LangSmith client
 #         self.langsmith_client = Client()
 
@@ -669,7 +669,7 @@ def get_retriever():
 
 class KMAChatAgent:
     def __init__(self, model_name: str = None, project_name="KMARegulation", custom_retriever=None):
-        """Initialize the UTCChat Agent with a hybrid retriever and model"""
+        """Initialize the UTC Chat Agent with a hybrid retriever and model"""
         # Initialize LangSmith client
         self.langsmith_client = Client()
 
