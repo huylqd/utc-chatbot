@@ -19,15 +19,15 @@ const LoginAppBar = ({ onBackToLanding }) => {
               </button>
             )}
             <img 
-              src="/img/kma.png" 
-              alt="Logo Học viện Kỹ thuật Mật mã" 
+              src="/img/utc.png" 
+              alt="Logo Đại Học Giao Thông Vận Tải" 
               className="appbar-logo"
               onClick={onBackToLanding}
               style={onBackToLanding ? { cursor: 'pointer' } : {}}
             />
             <div className="title-section">
-              <h1 className="appbar-title">ACTVN-AGENT</h1>
-              <p className="appbar-subtitle">AI Chatbot — Học viện Kỹ thuật Mật mã</p>
+              <h1 className="appbar-title">UTC-AGENT</h1>
+              <p className="appbar-subtitle">AI Chatbot — Đại Học Giao Thông Vận Tải</p>
             </div>
           </div>
         </div>

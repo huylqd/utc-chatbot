@@ -8,7 +8,7 @@ const WelcomeScreen = ({ onSendMessage, user }) => {
       icon: FiBook,
       title: 'Quy định học tập',
       description: 'Tìm hiểu quy định và chính sách học tập',
-      query: 'Cho tôi biết về quy định học tập tại Học viện Kỹ thuật Mật mã',
+      query: 'Cho tôi biết về quy định học tập tại Đại Học Giao Thông Vận Tải',
     },
     {
       icon: FiClock,
@@ -20,13 +20,13 @@ const WelcomeScreen = ({ onSendMessage, user }) => {
       icon: FiDollarSign,
       title: 'Học phí & Tài chính',
       description: 'Thông tin học phí và các khoản thu',
-      query: 'Học phí của Học viện Kỹ thuật Mật mã là bao nhiêu?',
+      query: 'Học phí của Đại Học Giao Thông Vận Tải là bao nhiêu?',
     },
     {
       icon: FiHelpCircle,
       title: 'Hỏi đáp chung',
       description: 'Các câu hỏi thường gặp về Học viện',
-      query: 'Tôi muốn hỏi về Học viện Kỹ thuật Mật mã',
+      query: 'Tôi muốn hỏi về Đại Học Giao Thông Vận Tải',
     },
   ];
 
@@ -51,14 +51,14 @@ const WelcomeScreen = ({ onSendMessage, user }) => {
       <div className="welcome-hero">
         <div className="welcome-brand">
           <div className="welcome-brand-circle">
-            <img src="/img/kma.png" alt="ACTVN" />
+            <img src="/img/utc.png" alt="UTC" />
           </div>
         </div>
         <h1 className="welcome-heading">
           {greeting()}{user?.name ? `, ${user.name}` : ''}
         </h1>
         <p className="welcome-subheading">
-          Tôi có thể giúp bạn tìm hiểu thông tin về Học viện Kỹ thuật Mật mã.
+          Tôi có thể giúp bạn tìm hiểu thông tin về Đại Học Giao Thông Vận Tải.
           Hãy hỏi bất cứ điều gì bạn muốn biết!
         </p>
       </div>

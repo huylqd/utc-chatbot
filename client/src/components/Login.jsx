@@ -187,7 +187,7 @@ const Login = ({
           {/* Logo */}
           <div className="login-logo-area">
             <div className="login-logo-icon">
-              <img src="/img/kma.png" alt="Logo Học viện Kỹ thuật Mật mã" />
+              <img src="/img/utc.png" alt="Logo Đại Học Giao Thông Vận Tải" />
             </div>
           </div>
 
@@ -202,9 +202,9 @@ const Login = ({
             </h2>
             <p className="login-subtitle">
               {isAdminMode
-                ? "Quản trị hệ thống ACTVN-AGENT"
+                ? "Quản trị hệ thống UTC-AGENT"
                 : isLoginMode
-                ? "Đăng nhập để sử dụng trợ lý ảo ACTVN-AGENT"
+                ? "Đăng nhập để sử dụng trợ lý ảo UTC-AGENT"
                 : "Đăng ký để bắt đầu trải nghiệm AI Chatbot"}
             </p>
           </div>
@@ -367,10 +367,10 @@ const Login = ({
             <p className="help-text">
               Cần hỗ trợ? Liên hệ:
               <a
-                href="mailto:ductrongbui1213@gmail.com"
+                href="mailto:huylq.12bhla@gmail.com"
                 className="help-link"
               >
-                ductrongbui1213@gmail.com
+                huylq.12bhla@gmail.com
               </a>
             </p>
           </div>

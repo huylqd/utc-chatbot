@@ -230,14 +230,14 @@ const LandingPage = ({ onNavigateLogin, onNavigateRegister }) => {
         <nav className="lp-nav lp-container">
           <div className="lp-logo-group">
             <img
-              src="/img/kma.png"
-              alt="Logo Học viện Kỹ thuật Mật mã"
+              src="/img/utc.png"
+              alt="Logo Đại Học Giao Thông Vận Tải"
               className="lp-logo-img"
             />
             <div className="lp-logo-text-block">
-              <span className="lp-logo-brand">ACTVN-AGENT</span>
+              <span className="lp-logo-brand">UTC-AGENT</span>
               <span className="lp-logo-tagline">
-                AI Chatbot — Học viện Kỹ thuật Mật mã
+                AI Chatbot — Đại Học Giao Thông Vận Tải
               </span>
             </div>
           </div>
@@ -346,20 +346,20 @@ const LandingPage = ({ onNavigateLogin, onNavigateRegister }) => {
               <div className="lp-badge lp-fade-up">
                 <span className="lp-badge-dot" />
                 <span className="lp-badge-text">
-                  AI Chatbot — Học viện Kỹ thuật Mật mã
+                  AI Chatbot — Đại Học Giao Thông Vận Tải
                 </span>
               </div>
 
               <h1 className="lp-hero-title lp-fade-up lp-fade-up-d1">
                 Trợ lý ảo thông minh{" "}
                 <span className="highlight">
-                  dành riêng cho sinh viên Học viện Kỹ thuật Mật mã
+                  dành riêng cho sinh viên Đại Học Giao Thông Vận Tải
                 </span>
               </h1>
 
               <p className="lp-hero-desc lp-fade-up lp-fade-up-d2">
                 Trải nghiệm chatbot AI thế hệ mới, được huấn luyện trên dữ
-                liệu chính thống của Học viện Kỹ thuật Mật mã. Hỗ trợ tra cứu
+                liệu chính thống của Đại Học Giao Thông Vận Tải. Hỗ trợ tra cứu
                 thông tin, giải đáp thắc mắc về học tập, quy chế và chương
                 trình đào tạo — nhanh chóng, chính xác và bảo mật.
               </p>
@@ -402,7 +402,7 @@ const LandingPage = ({ onNavigateLogin, onNavigateRegister }) => {
                     <IconBot />
                   </div>
                   <div>
-                    <p className="lp-chat-name">ACTVN-AGENT</p>
+                    <p className="lp-chat-name">UTC-AGENT</p>
                     <p className="lp-chat-status">
                       <span className="lp-chat-status-dot" />
                       Trực tuyến
@@ -412,7 +412,7 @@ const LandingPage = ({ onNavigateLogin, onNavigateRegister }) => {
 
                 <div className="lp-chat-messages">
                   <div className="lp-msg lp-msg-bot">
-                    Xin chào! Mình là trợ lý ảo của Học viện Kỹ thuật Mật mã.
+                    Xin chào! Mình là trợ lý ảo của Đại Học Giao Thông Vận Tải.
                     Mình có thể giúp gì cho bạn hôm nay?
                   </div>
                   <div className="lp-msg lp-msg-user">
@@ -450,10 +450,10 @@ const LandingPage = ({ onNavigateLogin, onNavigateRegister }) => {
           <div className="lp-section-header">
             <span className="lp-section-tag">Tính năng nổi bật</span>
             <h2 className="lp-section-title">
-              Tại sao nên sử dụng ACTVN-AGENT?
+              Tại sao nên sử dụng UTC-AGENT?
             </h2>
             <p className="lp-section-desc">
-              Được xây dựng chuyên biệt cho Học viện Kỹ thuật Mật mã, đáp ứng
+              Được xây dựng chuyên biệt cho Đại Học Giao Thông Vận Tải, đáp ứng
               các tiêu chuẩn khắt khe về độ chính xác, bảo mật và trải nghiệm
               người dùng.
             </p>
@@ -468,7 +468,7 @@ const LandingPage = ({ onNavigateLogin, onNavigateRegister }) => {
               <p>
                 Dữ liệu được mã hóa đầu cuối, đảm bảo thông tin cá nhân và nội
                 dung trò chuyện luôn an toàn, tuân thủ các quy chuẩn bảo mật
-                của Học viện Kỹ thuật Mật mã.
+                của Đại Học Giao Thông Vận Tải.
               </p>
             </div>
 
@@ -548,7 +548,7 @@ const LandingPage = ({ onNavigateLogin, onNavigateRegister }) => {
               </div>
               <div style={{ position: "relative", zIndex: 1 }}>
                 <p className="lp-bento-hero-label">
-                  Trợ lý ảo Học viện Kỹ thuật Mật mã
+                  Trợ lý ảo Đại Học Giao Thông Vận Tải
                 </p>
                 <h3 className="lp-bento-hero-title">
                   Hệ sinh thái AI
@@ -611,7 +611,7 @@ const LandingPage = ({ onNavigateLogin, onNavigateRegister }) => {
             </h2>
             <p className="lp-section-desc">
               Chỉ cần 4 bước đơn giản, bạn đã có thể trải nghiệm trợ lý ảo AI
-              thông minh của Học viện Kỹ thuật Mật mã.
+              thông minh của Đại Học Giao Thông Vận Tải.
             </p>
           </div>
 
@@ -629,7 +629,7 @@ const LandingPage = ({ onNavigateLogin, onNavigateRegister }) => {
               <h4>Đăng nhập hệ thống</h4>
               <p>
                 Sử dụng tài khoản vừa đăng ký để truy cập vào hệ thống
-                chatbot ACTVN-AGENT.
+                chatbot UTC-AGENT.
               </p>
             </div>
             <div className="lp-step">
@@ -667,10 +667,10 @@ const LandingPage = ({ onNavigateLogin, onNavigateRegister }) => {
               <h2 className="lp-cta-title">
                 Sẵn sàng khám phá
                 <br />
-                <span className="highlight">trợ lý ảo ACTVN-AGENT</span>?
+                <span className="highlight">trợ lý ảo UTC-AGENT</span>?
               </h2>
               <p className="lp-cta-desc">
-                Tham gia cùng hàng nghìn sinh viên Học viện Kỹ thuật Mật mã.
+                Tham gia cùng hàng nghìn sinh viên Đại Học Giao Thông Vận Tải.
                 Hoàn toàn miễn phí — đăng ký ngay để trải nghiệm!
               </p>
               <button
@@ -689,11 +689,11 @@ const LandingPage = ({ onNavigateLogin, onNavigateRegister }) => {
         <div className="lp-container">
           <div className="lp-footer-inner">
             <div className="lp-footer-logo">
-              <img src="/img/kma.png" alt="Logo Học viện Kỹ thuật Mật mã" />
+              <img src="/img/utc.png" alt="Logo Đại Học Giao Thông Vận Tải" />
               <div className="lp-footer-logo-text">
-                <span className="lp-footer-brand">ACTVN-AGENT</span>
+                <span className="lp-footer-brand">UTC-AGENT</span>
                 <span className="lp-footer-tagline">
-                  AI Chatbot — Học viện Kỹ thuật Mật mã
+                  AI Chatbot — Đại Học Giao Thông Vận Tải
                 </span>
               </div>
             </div>
@@ -708,31 +708,31 @@ const LandingPage = ({ onNavigateLogin, onNavigateRegister }) => {
               <a href="#huong-dan" onClick={(e) => { e.preventDefault(); scrollToSection("huong-dan"); }}>
                 Hướng dẫn sử dụng
               </a>
-              <a href="mailto:ductrongbui1213@gmail.com">
+              <a href="mailto:huylq.12bhla@gmail.com">
                 Liên hệ hỗ trợ
               </a>
             </nav>
 
             <div className="lp-footer-contact">
               <p>
-                <strong>Tác giả:</strong> Bùi Đức Trọng
+                <strong>Tác giả:</strong> Lê Quang Huy
               </p>
               <p>
                 <strong>Email:</strong>{" "}
-                <a href="mailto:ductrongbui1213@gmail.com">
-                  ductrongbui1213@gmail.com
+                <a href="mailto:huylq.12bhla@gmail.com">
+                  huylq.12bhla@gmail.com
                 </a>
               </p>
               <p>
-                <strong>Đơn vị:</strong> Học viện Kỹ thuật Mật mã
+                <strong>Đơn vị:</strong> Đại Học Giao Thông Vận Tải
               </p>
             </div>
 
             <div className="lp-footer-bottom">
               <p>
-                © 2025 Học viện Kỹ thuật Mật mã.
+                © 2025 Đại Học Giao Thông Vận Tải.
                 <br />
-                Hệ thống Trí tuệ Nhân tạo hỗ trợ đào tạo — ACTVN-AGENT.
+                Hệ thống Trí tuệ Nhân tạo hỗ trợ đào tạo — UTC-AGENT.
               </p>
             </div>
           </div>

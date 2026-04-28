@@ -117,7 +117,7 @@ const ModelManagement = () => {
           max_tokens: 2048,
           presence_penalty: 0,
           frequency_penalty: 0,
-          system_prompt: 'Bạn là trợ lý AI của Học viện Kỹ thuật Mật mã. Hãy trả lời các câu hỏi một cách chính xác, ngắn gọn và hữu ích.'
+          system_prompt: 'Bạn là trợ lý AI của Đại Học Giao Thông Vận Tải. Hãy trả lời các câu hỏi một cách chính xác, ngắn gọn và hữu ích.'
         }
       },
       {
@@ -140,7 +140,7 @@ const ModelManagement = () => {
           max_tokens: 1024,
           presence_penalty: 0,
           frequency_penalty: 0,
-          system_prompt: 'Bạn là trợ lý AI của Học viện Kỹ thuật Mật mã. Hãy trả lời các câu hỏi một cách ngắn gọn và hữu ích.'
+          system_prompt: 'Bạn là trợ lý AI của Đại Học Giao Thông Vận Tải. Hãy trả lời các câu hỏi một cách ngắn gọn và hữu ích.'
         }
       },
       {
@@ -163,7 +163,7 @@ const ModelManagement = () => {
           max_tokens: 1536,
           presence_penalty: 0.1,
           frequency_penalty: 0.1,
-          system_prompt: 'Bạn là trợ lý AI của Học viện Kỹ thuật Mật mã. Hãy trả lời các câu hỏi bằng tiếng Việt một cách hữu ích.'
+          system_prompt: 'Bạn là trợ lý AI của Đại Học Giao Thông Vận Tải. Hãy trả lời các câu hỏi bằng tiếng Việt một cách hữu ích.'
         }
       }
     ];

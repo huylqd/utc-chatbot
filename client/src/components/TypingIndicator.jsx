@@ -14,7 +14,7 @@ const TypingIndicator = () => {
 
         {/* Thinking shimmer */}
         <div className="typing-content">
-          <div className="typing-label">ACTVN-AGENT đang suy nghĩ</div>
+          <div className="typing-label">UTC-AGENT đang suy nghĩ</div>
           <div className="typing-shimmer">
             <div className="typing-shimmer-bar" />
             <div className="typing-shimmer-bar short" />

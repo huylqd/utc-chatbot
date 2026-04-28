@@ -7,7 +7,7 @@ const ChatInput = ({
   onSendMessage,
   onVoiceInput,
   disabled,
-  placeholder = "Nhập câu hỏi cho ACTVN-AGENT...",
+  placeholder = "Nhập câu hỏi cho UTC-AGENT...",
   selectedFolder,
   onFolderChange,
   folders = [],

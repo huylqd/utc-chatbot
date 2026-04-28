@@ -163,7 +163,7 @@ const ModelSelector = () => {
     return type || null;
   };
 
-  const displayName = activeModel?.name || "ACTVN AI";
+  const displayName = activeModel?.name || "UTC AI";
   const modelCount = models.length;
   const typeBadge = getModelTypeBadge(activeModel);
   const sortedModels = [...models].sort((a, b) => {

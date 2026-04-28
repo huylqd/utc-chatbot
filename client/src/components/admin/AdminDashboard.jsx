@@ -111,14 +111,14 @@ const AdminDashboard = () => {
       >
         <div className="admin-sidebar-header">
           <img
-            src="/img/kma.png"
+            src="/img/utc.png"
             alt="UTCLogo"
             className="admin-logo"
             onError={(e) => {
               e.currentTarget.src = "/assets/kma-logo-outline.svg";
             }}
           />
-          <h2>ACTVN-AGENT</h2>
+          <h2>UTC-AGENT</h2>
         </div>
 
         <nav className="admin-nav">
@@ -234,7 +234,7 @@ const AdminDashboard = () => {
           <div className="admin-header-container">
             <div className="admin-header-left">
               <img
-                src="/img/kma.png"
+                src="/img/utc.png"
                 alt="KMA"
                 className="admin-header-logo"
                 onError={(e) => {

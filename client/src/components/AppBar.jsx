@@ -38,9 +38,9 @@ const AppBar = ({
     <div className="app-bar">
       <div className="app-bar-content">
         <div className="logo-section">
-          <img src="/img/kma.png" alt="KMA" className="logo" />
+          <img src="/img/utc.png" alt="UTC" className="logo" />
           <div className="title-section">
-            <h1 className="main-title">ACTVN AI</h1>
+            <h1 className="main-title">UTC AI</h1>
           </div>
           <nav className="mode-switcher">
             <button

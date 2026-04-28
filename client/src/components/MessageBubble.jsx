@@ -128,7 +128,7 @@ const MessageBubble = ({ message }) => {
       return <FiAlertCircle className="w-4 h-4" />;
     } else {
       return (
-        <img src="/img/kma.png" alt="KMA" className="message-avatar-image" />
+        <img src="/img/utc.png" alt="UTC" className="message-avatar-image" />
       );
     }
   };

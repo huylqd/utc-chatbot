@@ -73,7 +73,7 @@ const AdminSidebar: React.FC<AdminSidebarProps> = ({
           }}
         />
         <h2>Quản trị Chatbot</h2>
-        <span className="admin-subtitle">Học viện Kỹ thuật Mật mã</span>
+        <span className="admin-subtitle">Đại Học Giao Thông Vận Tải</span>
       </div>
       
       <nav className="admin-nav">
