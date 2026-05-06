@@ -227,11 +227,11 @@
 }
 
 .file-modal-content::-webkit-scrollbar-track {
-  background: #f0f2f7;
+  background: var(--color-sidebar);
 }
 
 .file-modal-content::-webkit-scrollbar-thumb {
-  background: #c2185b;
+  background: var(--color-primary);
   border-radius: 4px;
 }
 
@@ -614,7 +614,7 @@
   }
 
   .close-modal-btn:hover {
-    background: rgba(194, 24, 91, 0.2);
+    background: rgba(245, 196, 0, 0.32);
   }
 
   .file-modal-content {
@@ -628,7 +628,7 @@
 
   .file-item:hover {
     background: #3a3a3a;
-    border-color: #c2185b;
+    border-color: var(--color-primary);
   }
 
   .file-item-info h4 {
@@ -646,9 +646,9 @@
   }
 
   .file-action-btn:hover {
-    border-color: #c2185b;
+    border-color: var(--color-primary);
     background: #2a2a2a;
-    color: #c2185b;
+    color: var(--color-primary);
   }
 
   .file-empty-state {
@@ -666,9 +666,9 @@
   }
 
   .file-refresh-btn:hover {
-    border-color: #c2185b;
+    border-color: var(--color-primary);
     background: #2a2a2a;
-    color: #c2185b;
+    color: var(--color-primary);
   }
 
   .file-modal-footer {

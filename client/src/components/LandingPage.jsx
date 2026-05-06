@@ -121,7 +121,7 @@ const ParticlesCanvas = () => {
         vy: (Math.random() - 0.5) * 0.4,
         radius: Math.random() * 2 + 1,
         opacity: Math.random() * 0.3 + 0.05,
-        hue: Math.random() > 0.5 ? 330 : 260, // pink or purple
+        hue: Math.random() > 0.5 ? 48 : 256, // UTC gold or navy
       });
     }
     return particles;
@@ -171,7 +171,7 @@ const ParticlesCanvas = () => {
             ctx.beginPath();
             ctx.moveTo(particles[i].x, particles[i].y);
             ctx.lineTo(particles[j].x, particles[j].y);
-            ctx.strokeStyle = `rgba(194, 24, 91, ${0.04 * (1 - dist / 120)})`;
+            ctx.strokeStyle = `rgba(245, 196, 0, ${0.05 * (1 - dist / 120)})`;
             ctx.lineWidth = 0.5;
             ctx.stroke();
           }

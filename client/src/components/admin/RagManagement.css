@@ -59,8 +59,8 @@
   align-items: center;
   justify-content: center;
   background-color: transparent;
-  color: #c2185b;
-  border: 2px solid #c2185b;
+  color: var(--color-primary);
+  border: 2px solid var(--color-primary);
   border-radius: 8px;
   width: 36px;
   height: 36px;
@@ -70,9 +70,9 @@
 }
 
 .new-folder-button:hover {
-  background-color: rgba(194, 24, 91, 0.08);
-  border-color: #880e4f;
-  color: #880e4f;
+  background-color: rgba(245, 196, 0, 0.16);
+  border-color: var(--color-primary-hover);
+  color: var(--color-primary-hover);
 }
 
 .new-folder-input {
@@ -94,15 +94,15 @@
 
 .new-folder-input input:focus {
   outline: none;
-  border-color: #c2185b;
-  box-shadow: 0 0 0 3px rgba(194, 24, 91, 0.1);
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 3px rgba(245, 196, 0, 0.18);
 }
 
 .new-folder-input button {
   padding: 8px 12px;
   background-color: transparent;
-  border: 2px solid #c2185b;
-  color: #c2185b;
+  border: 2px solid var(--color-primary);
+  color: var(--color-primary);
   border-radius: 6px;
   cursor: pointer;
   font-size: 13px;
@@ -111,9 +111,9 @@
 }
 
 .new-folder-input button:hover {
-  background-color: rgba(194, 24, 91, 0.08);
-  border-color: #880e4f;
-  color: #880e4f;
+  background-color: rgba(245, 196, 0, 0.16);
+  border-color: var(--color-primary-hover);
+  color: var(--color-primary-hover);
 }
 
 .new-folder-input button:last-child {
@@ -133,10 +133,10 @@
   flex-direction: column;
   gap: 8px;
   margin-bottom: 12px;
-  background-color: rgba(194, 24, 91, 0.05);
+  background-color: rgba(245, 196, 0, 0.12);
   padding: 12px;
   border-radius: 8px;
-  border: 1px solid rgba(194, 24, 91, 0.2);
+  border: 1px solid rgba(245, 196, 0, 0.32);
 }
 
 .subfolder-info {
@@ -157,8 +157,8 @@
 
 .subfolder-info input:focus {
   outline: none;
-  border-color: #c2185b;
-  box-shadow: 0 0 0 3px rgba(194, 24, 91, 0.1);
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 3px rgba(245, 196, 0, 0.18);
 }
 
 .subfolder-actions {
@@ -169,8 +169,8 @@
 .subfolder-actions button {
   padding: 8px 12px;
   background-color: transparent;
-  border: 2px solid #c2185b;
-  color: #c2185b;
+  border: 2px solid var(--color-primary);
+  color: var(--color-primary);
   border-radius: 6px;
   cursor: pointer;
   font-size: 13px;
@@ -179,9 +179,9 @@
 }
 
 .subfolder-actions button:hover {
-  background-color: rgba(194, 24, 91, 0.08);
-  border-color: #880e4f;
-  color: #880e4f;
+  background-color: rgba(245, 196, 0, 0.16);
+  border-color: var(--color-primary-hover);
+  color: var(--color-primary-hover);
 }
 
 .subfolder-actions button:last-child {
@@ -222,7 +222,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: rgba(194, 24, 91, 0.03);
+  background-color: rgba(245, 196, 0, 0.03);
   border-radius: 6px;
   padding: 8px 10px;
   cursor: pointer;
@@ -232,13 +232,13 @@
 }
 
 .subfolder-item:hover {
-  background-color: rgba(194, 24, 91, 0.08);
-  border-color: #c2185b;
+  background-color: rgba(245, 196, 0, 0.16);
+  border-color: var(--color-primary);
 }
 
 .subfolder-item.selected {
-  background-color: rgba(194, 24, 91, 0.12);
-  border-color: #c2185b;
+  background-color: rgba(245, 196, 0, 0.20);
+  border-color: var(--color-primary);
 }
 
 .subfolder-indent {
@@ -258,12 +258,12 @@
 }
 
 .folder-item:hover {
-  background-color: rgba(194, 24, 91, 0.08);
+  background-color: rgba(245, 196, 0, 0.16);
 }
 
 .folder-item.selected {
-  background-color: rgba(194, 24, 91, 0.12);
-  border-left: 3px solid #c2185b;
+  background-color: rgba(245, 196, 0, 0.20);
+  border-left: 3px solid var(--color-primary);
   padding-left: 7px;
 }
 
@@ -383,8 +383,8 @@
 
 .folder-rename-input input:focus {
   outline: none;
-  border-color: #c2185b;
-  box-shadow: 0 0 0 3px rgba(194, 24, 91, 0.1);
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 3px rgba(245, 196, 0, 0.18);
 }
 
 .folder-rename-input button {
@@ -399,14 +399,14 @@
 
 .folder-rename-input button:first-of-type {
   background-color: transparent;
-  border-color: #c2185b;
-  color: #c2185b;
+  border-color: var(--color-primary);
+  color: var(--color-primary);
 }
 
 .folder-rename-input button:first-of-type:hover {
-  background-color: rgba(194, 24, 91, 0.08);
-  border-color: #880e4f;
-  color: #880e4f;
+  background-color: rgba(245, 196, 0, 0.16);
+  border-color: var(--color-primary-hover);
+  color: var(--color-primary-hover);
 }
 
 .folder-rename-input button:last-of-type {
@@ -443,8 +443,8 @@
 
 .folder-select select:focus {
   outline: none;
-  border-color: #c2185b;
-  box-shadow: 0 0 0 3px rgba(194, 24, 91, 0.1);
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 3px rgba(245, 196, 0, 0.18);
 }
 
 .upload-section {
@@ -482,19 +482,19 @@
   gap: 8px;
   padding: 10px 16px;
   background: transparent;
-  color: #c2185b;
+  color: var(--color-primary);
   border-radius: 6px;
   cursor: pointer;
-  border: 2px solid #c2185b;
+  border: 2px solid var(--color-primary);
   font-size: 14px;
   font-weight: 500;
   transition: all 0.2s ease;
 }
 
 .file-input-label:hover {
-  background-color: rgba(194, 24, 91, 0.08);
-  border-color: #880e4f;
-  color: #880e4f;
+  background-color: rgba(245, 196, 0, 0.16);
+  border-color: var(--color-primary-hover);
+  color: var(--color-primary-hover);
 }
 
 .selected-filename {
@@ -520,8 +520,8 @@
   gap: 8px;
   padding: 10px 16px;
   background-color: transparent;
-  color: #c2185b;
-  border: 2px solid #c2185b;
+  color: var(--color-primary);
+  border: 2px solid var(--color-primary);
   border-radius: 6px;
   cursor: pointer;
   font-size: 14px;
@@ -532,9 +532,9 @@
 .upload-button:hover,
 .rebuild-button:hover,
 .refresh-button:hover {
-  background-color: rgba(194, 24, 91, 0.08);
-  border-color: #880e4f;
-  color: #880e4f;
+  background-color: rgba(245, 196, 0, 0.16);
+  border-color: var(--color-primary-hover);
+  color: var(--color-primary-hover);
 }
 
 .upload-button:disabled,
@@ -566,15 +566,15 @@
 .rebuild-option {
   margin-bottom: 16px;
   padding: 16px;
-  background: rgba(194, 24, 91, 0.03);
+  background: rgba(245, 196, 0, 0.03);
   border-radius: 8px;
   border: 1px solid #e5e7eb;
   transition: all 0.2s ease;
 }
 
 .rebuild-option:hover {
-  background: rgba(194, 24, 91, 0.05);
-  border-color: #c2185b;
+  background: rgba(245, 196, 0, 0.12);
+  border-color: var(--color-primary);
 }
 
 .full-rebuild-section {
@@ -644,15 +644,15 @@
 
 .department-rebuild-option {
   padding: 16px;
-  background: rgba(194, 24, 91, 0.03);
+  background: rgba(245, 196, 0, 0.03);
   border-radius: 8px;
   border: 1px solid #e5e7eb;
   transition: all 0.2s ease;
 }
 
 .department-rebuild-option:hover {
-  background: rgba(194, 24, 91, 0.05);
-  border-color: #c2185b;
+  background: rgba(245, 196, 0, 0.12);
+  border-color: var(--color-primary);
 }
 
 .rebuild-button.full-rebuild {
@@ -730,7 +730,7 @@
 }
 
 .file-table tr:hover {
-  background: rgba(194, 24, 91, 0.02);
+  background: rgba(245, 196, 0, 0.02);
 }
 
 .file-name {
@@ -746,11 +746,11 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #c2185b;
+  color: var(--color-primary);
 }
 
 .file-icon.pdf {
-  color: #c2185b;
+  color: var(--color-primary);
 }
 
 .file-icon.docx {
@@ -956,8 +956,8 @@
 
 .file-content-editor:focus {
   outline: none;
-  border-color: #c2185b;
-  box-shadow: 0 0 0 3px rgba(194, 24, 91, 0.1);
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 3px rgba(245, 196, 0, 0.18);
 }
 
 .modal-buttons {
@@ -1060,10 +1060,10 @@
   margin-top: 4px;
   width: 16px;
   height: 16px;
-  border: 2px solid #c2185b;
+  border: 2px solid var(--color-primary);
   border-radius: 50%;
   cursor: pointer;
-  accent-color: #c2185b;
+  accent-color: var(--color-primary);
 }
 
 .department-option label {
@@ -1107,8 +1107,8 @@
   gap: 6px;
   padding: 11px 20px;
   background-color: transparent;
-  border: 2px solid #c2185b;
-  color: #c2185b;
+  border: 2px solid var(--color-primary);
+  color: var(--color-primary);
   border-radius: 6px;
   cursor: pointer;
   font-weight: 500;
@@ -1117,9 +1117,9 @@
 }
 
 .confirm-button:hover:not(:disabled) {
-  background-color: rgba(194, 24, 91, 0.08);
-  border-color: #880e4f;
-  color: #880e4f;
+  background-color: rgba(245, 196, 0, 0.16);
+  border-color: var(--color-primary-hover);
+  color: var(--color-primary-hover);
 }
 
 .confirm-button:disabled {

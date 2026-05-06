@@ -40,7 +40,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 8px 28px rgba(194, 24, 91, 0.25);
+  box-shadow: 0 8px 28px rgba(245, 196, 0, 0.38);
 }
 
 html.dark .welcome-brand-circle {

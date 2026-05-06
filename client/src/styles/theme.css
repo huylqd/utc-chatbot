@@ -8,37 +8,50 @@
 
 /* Color Palette */
 :root {
+  --color-primary: #24164F;
+  --color-primary-hover: #2B1B5A;
+  --color-accent: #F5C400;
+  --color-accent-soft: #FFF7CC;
+  --color-bg: #FAF8F2;
+  --color-sidebar: #F8F4E3;
+  --color-card: #FFFFFF;
+  --color-border: #E6DFA8;
+  --color-text: #1E1E2F;
+  --color-muted: #5F5A72;
+  --color-success: #22C55E;
+  --color-error: #EF4444;
+
   /* Modern UTCBrand Colors */
-  --kma-primary: #c2185b;
-  --kma-primary-dark: #880e4f;
-  --kma-primary-light: #e91e63;
-  --kma-primary-50: rgba(194, 24, 91, 0.05);
-  --kma-primary-10: rgba(194, 24, 91, 0.1);
-  --kma-primary-20: rgba(194, 24, 91, 0.2);
+  --kma-primary: var(--color-primary);
+  --kma-primary-dark: var(--color-primary-hover);
+  --kma-primary-light: var(--color-accent);
+  --kma-primary-50: rgba(245, 196, 0, 0.12);
+  --kma-primary-10: rgba(245, 196, 0, 0.18);
+  --kma-primary-20: rgba(245, 196, 0, 0.32);
 
-  --accent: #7c4dff;
-  --accent-light: #b388ff;
-  --accent-50: rgba(124, 77, 255, 0.05);
+  --accent: var(--color-accent);
+  --accent-light: #FFD000;
+  --accent-50: rgba(245, 196, 0, 0.12);
 
-  --surface: #fafbfd;
-  --surface-dim: #f0f2f7;
-  --surface-bright: #ffffff;
-  --on-surface: #0f1419;
-  --on-surface-variant: #536471;
+  --surface: var(--color-bg);
+  --surface-dim: var(--color-sidebar);
+  --surface-bright: var(--color-card);
+  --on-surface: var(--color-text);
+  --on-surface-variant: var(--color-muted);
   --outline: #8899a6;
-  --outline-variant: #e1e8ed;
+  --outline-variant: var(--color-border);
 
   /* UTCRed Palette (legacy) */
-  --kma-red-50: #fef2f2;
-  --kma-red-100: #fee2e2;
-  --kma-red-200: #fecaca;
-  --kma-red-300: #fca5a5;
-  --kma-red-400: #f87171;
-  --kma-red-500: #ef4444;
-  --kma-red-600: #dc2626;
-  --kma-red-700: #b91c1c;
-  --kma-red-800: #991b1b;
-  --kma-red-900: #7f1d1d;
+  --kma-red-50: var(--color-accent-soft);
+  --kma-red-100: var(--color-accent-soft);
+  --kma-red-200: var(--color-border);
+  --kma-red-300: rgba(245, 196, 0, 0.45);
+  --kma-red-400: #FFD000;
+  --kma-red-500: var(--color-accent);
+  --kma-red-600: var(--color-primary);
+  --kma-red-700: var(--color-primary-hover);
+  --kma-red-800: var(--color-primary-hover);
+  --kma-red-900: var(--color-primary);
 
   /* Neutral Colors */
   --gray-50: #f9fafb;
@@ -53,22 +66,22 @@
   --gray-900: #111827;
 
   /* Semantic Colors */
-  --success: #10b981;
-  --warning: #f59e0b;
-  --error: #ef4444;
+  --success: var(--color-success);
+  --warning: var(--color-accent);
+  --error: var(--color-error);
   --info: #3b82f6;
 
   /* Light Mode */
-  --bg-primary: #ffffff;
-  --bg-secondary: #f9fafb;
-  --bg-tertiary: #f3f4f6;
+  --bg-primary: var(--color-bg);
+  --bg-secondary: var(--color-sidebar);
+  --bg-tertiary: var(--color-accent-soft);
 
-  --text-primary: #111827;
-  --text-secondary: #4b5563;
-  --text-tertiary: #6b7280;
+  --text-primary: var(--color-text);
+  --text-secondary: var(--color-muted);
+  --text-tertiary: var(--color-muted);
 
-  --border: #e5e7eb;
-  --border-light: #f3f4f6;
+  --border: var(--color-border);
+  --border-light: var(--color-accent-soft);
 
   --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
   --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
@@ -83,12 +96,12 @@
 
 /* Dark Mode */
 html.dark {
-  --surface: #0f1419;
+  --surface: var(--color-text);
   --surface-dim: #161b22;
   --surface-bright: #1a1d21;
-  --on-surface: #e1e8ed;
+  --on-surface: var(--color-border);
   --on-surface-variant: #8899a6;
-  --outline: #536471;
+  --outline: var(--color-muted);
   --outline-variant: #23262e;
 
   --bg-primary: #111827;

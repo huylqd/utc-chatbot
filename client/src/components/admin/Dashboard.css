@@ -57,7 +57,7 @@
 .dashboard-stat-card:hover {
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
   transform: translateY(-2px);
-  border-color: #c2185b;
+  border-color: var(--color-primary);
 }
 
 .stat-icon-container {
@@ -68,7 +68,7 @@
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
-  background: linear-gradient(135deg, #f472b6 0%, #ec4899 100%);
+  background: linear-gradient(135deg, #FFD000 0%, var(--color-accent) 100%);
 }
 
 .stat-icon {

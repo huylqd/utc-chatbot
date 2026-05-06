@@ -9,24 +9,24 @@
 
 /* ---- CSS Variables ---- */
 .landing-page {
-  --kma-primary: #c2185b;
-  --kma-primary-dark: #880e4f;
-  --kma-primary-light: #e91e63;
-  --kma-primary-50: rgba(194, 24, 91, 0.05);
-  --kma-primary-10: rgba(194, 24, 91, 0.1);
-  --kma-primary-20: rgba(194, 24, 91, 0.2);
+  --kma-primary: var(--color-primary);
+  --kma-primary-dark: var(--color-primary-hover);
+  --kma-primary-light: var(--color-accent);
+  --kma-primary-50: rgba(245, 196, 0, 0.12);
+  --kma-primary-10: rgba(245, 196, 0, 0.18);
+  --kma-primary-20: rgba(245, 196, 0, 0.32);
 
-  --accent: #7c4dff;
-  --accent-light: #b388ff;
-  --accent-50: rgba(124, 77, 255, 0.05);
+  --accent: var(--color-accent);
+  --accent-light: #FFD000;
+  --accent-50: rgba(245, 196, 0, 0.12);
 
-  --surface: #fafbfd;
-  --surface-dim: #f0f2f7;
+  --surface: var(--color-bg);
+  --surface-dim: var(--color-sidebar);
   --surface-bright: #ffffff;
-  --on-surface: #0f1419;
-  --on-surface-variant: #536471;
+  --on-surface: var(--color-text);
+  --on-surface-variant: var(--color-muted);
   --outline: #8899a6;
-  --outline-variant: #e1e8ed;
+  --outline-variant: var(--color-border);
 
   --font-display: 'Space Grotesk', sans-serif;
   --font-body: 'Plus Jakarta Sans', sans-serif;
@@ -43,7 +43,7 @@
   --shadow-md: 0 4px 14px rgba(0,0,0,0.06);
   --shadow-lg: 0 10px 38px rgba(0,0,0,0.08);
   --shadow-xl: 0 20px 60px rgba(0,0,0,0.1);
-  --shadow-glow: 0 0 60px rgba(194, 24, 91, 0.12);
+  --shadow-glow: 0 0 60px rgba(245, 196, 0, 0.20);
   --shadow-glow-accent: 0 0 40px rgba(124, 77, 255, 0.1);
 }
 
@@ -122,7 +122,7 @@
 .lp-orb-1 {
   width: 500px;
   height: 500px;
-  background: radial-gradient(circle, rgba(194, 24, 91, 0.15) 0%, transparent 70%);
+  background: radial-gradient(circle, rgba(245, 196, 0, 0.24) 0%, transparent 70%);
   top: -100px;
   right: -100px;
   animation: lp-orb-drift 20s ease-in-out infinite alternate;
@@ -140,7 +140,7 @@
 .lp-orb-3 {
   width: 350px;
   height: 350px;
-  background: radial-gradient(circle, rgba(194, 24, 91, 0.08) 0%, transparent 70%);
+  background: radial-gradient(circle, rgba(245, 196, 0, 0.16) 0%, transparent 70%);
   top: 50%;
   right: 10%;
   animation: lp-orb-drift 18s ease-in-out infinite alternate;
@@ -287,12 +287,12 @@
 .lp-btn-primary {
   background: linear-gradient(135deg, var(--kma-primary) 0%, var(--kma-primary-dark) 100%);
   color: #fff;
-  box-shadow: 0 4px 20px rgba(194, 24, 91, 0.3);
+  box-shadow: 0 4px 20px rgba(245, 196, 0, 0.45);
 }
 
 .lp-btn-primary:hover {
   transform: translateY(-2px);
-  box-shadow: 0 8px 30px rgba(194, 24, 91, 0.4);
+  box-shadow: 0 8px 30px rgba(245, 196, 0, 0.4);
 }
 
 .lp-btn-primary:active {
@@ -306,10 +306,10 @@
 }
 
 .lp-btn-white {
-  background: linear-gradient(135deg, #ffffff 0%, #f0e6f6 50%, #fce4ec 100%);
+  background: linear-gradient(135deg, #ffffff 0%, var(--color-sidebar) 50%, var(--color-accent-soft) 100%);
   color: var(--kma-primary-dark);
   box-shadow:
-    0 4px 24px rgba(194, 24, 91, 0.2),
+    0 4px 24px rgba(245, 196, 0, 0.32),
     0 0 40px rgba(124, 77, 255, 0.1),
     inset 0 1px 0 rgba(255,255,255,0.8);
   font-weight: 700;
@@ -320,9 +320,9 @@
 
 .lp-btn-white:hover {
   transform: translateY(-4px) scale(1.03);
-  background: linear-gradient(135deg, #ffffff 0%, #e8d5f5 50%, #f8bbd0 100%);
+  background: linear-gradient(135deg, #ffffff 0%, #e8d5f5 50%, var(--color-border) 100%);
   box-shadow:
-    0 8px 40px rgba(194, 24, 91, 0.35),
+    0 8px 40px rgba(245, 196, 0, 0.35),
     0 0 60px rgba(124, 77, 255, 0.15),
     inset 0 1px 0 rgba(255,255,255,0.9);
   color: var(--kma-primary-dark);
@@ -381,7 +381,7 @@
   width: 120%;
   height: 800px;
   background:
-    radial-gradient(ellipse at 30% 20%, rgba(194, 24, 91, 0.06) 0%, transparent 50%),
+    radial-gradient(ellipse at 30% 20%, rgba(245, 196, 0, 0.06) 0%, transparent 50%),
     radial-gradient(ellipse at 70% 30%, rgba(124, 77, 255, 0.04) 0%, transparent 50%);
   pointer-events: none;
   z-index: 0;
@@ -395,9 +395,9 @@
   right: 0;
   height: 100%;
   background-image:
-    radial-gradient(at 27% 37%, rgba(194, 24, 91, 0.04) 0px, transparent 50%),
+    radial-gradient(at 27% 37%, rgba(245, 196, 0, 0.04) 0px, transparent 50%),
     radial-gradient(at 97% 21%, rgba(124, 77, 255, 0.05) 0px, transparent 50%),
-    radial-gradient(at 52% 99%, rgba(194, 24, 91, 0.03) 0px, transparent 50%),
+    radial-gradient(at 52% 99%, rgba(245, 196, 0, 0.03) 0px, transparent 50%),
     radial-gradient(at 10% 29%, rgba(124, 77, 255, 0.03) 0px, transparent 50%);
   pointer-events: none;
   z-index: 0;
@@ -424,7 +424,7 @@
   gap: 10px;
   padding: 8px 18px;
   background: linear-gradient(135deg, var(--kma-primary-10), var(--accent-50));
-  border: 1px solid rgba(194, 24, 91, 0.12);
+  border: 1px solid rgba(245, 196, 0, 0.20);
   border-radius: 999px;
   width: fit-content;
   backdrop-filter: blur(10px);
@@ -435,7 +435,7 @@
   height: 8px;
   border-radius: 50%;
   background: var(--kma-primary);
-  box-shadow: 0 0 12px rgba(194, 24, 91, 0.5);
+  box-shadow: 0 0 12px rgba(245, 196, 0, 0.65);
   animation: lp-glow-pulse 2s ease-in-out infinite;
 }
 
@@ -524,7 +524,7 @@
   position: absolute;
   inset: -50px;
   background: 
-    radial-gradient(ellipse at 30% 30%, rgba(194, 24, 91, 0.1) 0%, transparent 60%),
+    radial-gradient(ellipse at 30% 30%, rgba(245, 196, 0, 0.18) 0%, transparent 60%),
     radial-gradient(ellipse at 70% 70%, rgba(124, 77, 255, 0.08) 0%, transparent 60%);
   border-radius: 50%;
   pointer-events: none;
@@ -567,7 +567,7 @@
   justify-content: center;
   color: #fff;
   font-size: 1.2rem;
-  box-shadow: 0 4px 12px rgba(194, 24, 91, 0.3);
+  box-shadow: 0 4px 12px rgba(245, 196, 0, 0.45);
 }
 
 .lp-chat-name {
@@ -624,7 +624,7 @@
   background: linear-gradient(135deg, var(--kma-primary), var(--kma-primary-dark));
   color: #fff;
   border-bottom-right-radius: 4px;
-  box-shadow: 0 4px 12px rgba(194, 24, 91, 0.2);
+  box-shadow: 0 4px 12px rgba(245, 196, 0, 0.32);
 }
 
 .lp-chat-input-row {
@@ -657,12 +657,12 @@
   justify-content: center;
   color: #fff;
   transition: all 0.3s;
-  box-shadow: 0 4px 12px rgba(194, 24, 91, 0.25);
+  box-shadow: 0 4px 12px rgba(245, 196, 0, 0.38);
 }
 
 .lp-chat-send-btn:hover {
   transform: scale(1.08);
-  box-shadow: 0 6px 20px rgba(194, 24, 91, 0.4);
+  box-shadow: 0 6px 20px rgba(245, 196, 0, 0.4);
 }
 
 /* ============================================================
@@ -740,7 +740,7 @@
 }
 
 .lp-feature-card:hover {
-  border-color: rgba(194, 24, 91, 0.1);
+  border-color: rgba(245, 196, 0, 0.18);
   box-shadow: var(--shadow-xl), var(--shadow-glow);
   transform: translateY(-6px);
 }
@@ -813,7 +813,7 @@
 .lp-bento-hero {
   grid-column: span 2;
   grid-row: span 2;
-  background: linear-gradient(135deg, var(--kma-primary) 0%, var(--kma-primary-dark) 50%, #4a148c 100%);
+  background: linear-gradient(135deg, var(--kma-primary) 0%, var(--kma-primary-dark) 50%, var(--color-primary-hover) 100%);
   border-radius: var(--radius-2xl);
   padding: 48px;
   color: #fff;
@@ -958,7 +958,7 @@
 }
 
 .lp-bento-cell-b {
-  background: linear-gradient(135deg, #f0f2f7, #e8eaf6);
+  background: linear-gradient(135deg, var(--color-sidebar), #e8eaf6);
 }
 
 .lp-bento-wide {
@@ -1025,7 +1025,7 @@
 }
 
 .lp-step:hover {
-  background: rgba(194, 24, 91, 0.02);
+  background: rgba(245, 196, 0, 0.02);
 }
 
 .lp-step-num {
@@ -1041,7 +1041,7 @@
   font-size: 1.2rem;
   font-weight: 700;
   margin: 0 auto 20px;
-  box-shadow: 0 6px 24px rgba(194, 24, 91, 0.3);
+  box-shadow: 0 6px 24px rgba(245, 196, 0, 0.45);
   position: relative;
 }
 
@@ -1050,7 +1050,7 @@
   position: absolute;
   inset: -4px;
   border-radius: 50%;
-  border: 2px solid rgba(194, 24, 91, 0.15);
+  border: 2px solid rgba(245, 196, 0, 0.24);
   animation: lp-ring-pulse 3s ease-in-out infinite;
 }
 
@@ -1101,7 +1101,7 @@
   right: -60px;
   width: 450px;
   height: 450px;
-  background: radial-gradient(circle, rgba(194, 24, 91, 0.25) 0%, transparent 70%);
+  background: radial-gradient(circle, rgba(245, 196, 0, 0.38) 0%, transparent 70%);
   border-radius: 50%;
   pointer-events: none;
   animation: lp-orb-drift 12s ease-in-out infinite alternate;
@@ -1166,7 +1166,7 @@
 }
 
 .lp-cta-title .highlight {
-  background: linear-gradient(135deg, #ff6090, #b388ff);
+  background: linear-gradient(135deg, #FFD000, #FFD000);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -1299,13 +1299,13 @@
    ANIMATIONS
    ============================================================ */
 @keyframes lp-glow-pulse {
-  0%, 100% { opacity: 1; box-shadow: 0 0 12px rgba(194, 24, 91, 0.4); }
-  50% { opacity: 0.5; box-shadow: 0 0 4px rgba(194, 24, 91, 0.2); }
+  0%, 100% { opacity: 1; box-shadow: 0 0 12px rgba(245, 196, 0, 0.4); }
+  50% { opacity: 0.5; box-shadow: 0 0 4px rgba(245, 196, 0, 0.32); }
 }
 
 @keyframes lp-btn-glow {
-  0%, 100% { box-shadow: 0 4px 24px rgba(194, 24, 91, 0.2), 0 0 40px rgba(124, 77, 255, 0.1), inset 0 1px 0 rgba(255,255,255,0.8); }
-  50% { box-shadow: 0 4px 32px rgba(194, 24, 91, 0.35), 0 0 60px rgba(124, 77, 255, 0.18), inset 0 1px 0 rgba(255,255,255,0.9); }
+  0%, 100% { box-shadow: 0 4px 24px rgba(245, 196, 0, 0.32), 0 0 40px rgba(124, 77, 255, 0.1), inset 0 1px 0 rgba(255,255,255,0.8); }
+  50% { box-shadow: 0 4px 32px rgba(245, 196, 0, 0.35), 0 0 60px rgba(124, 77, 255, 0.18), inset 0 1px 0 rgba(255,255,255,0.9); }
 }
 
 @keyframes lp-float {
