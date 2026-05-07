@@ -74,6 +74,14 @@ const IconBot = () => (
   </svg>
 );
 
+const IconSparkle = () => (
+  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+    <path d="M12 2l1.7 5.1L19 9l-5.3 1.9L12 16l-1.7-5.1L5 9l5.3-1.9L12 2z" />
+    <path d="M19 14l.8 2.2L22 17l-2.2.8L19 20l-.8-2.2L16 17l2.2-.8L19 14z" />
+    <path d="M5 15l.7 1.8L8 17.5l-2.3.7L5 20l-.7-1.8L2 17.5l2.3-.7L5 15z" />
+  </svg>
+);
+
 const IconMenu = () => (
   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
     <line x1="4" y1="8" x2="20" y2="8"/>
@@ -343,25 +351,33 @@ const LandingPage = ({ onNavigateLogin, onNavigateRegister }) => {
           <div className="lp-hero-grid">
             {/* Left Content */}
             <div className="lp-hero-content">
-              <div className="lp-badge lp-fade-up">
-                <span className="lp-badge-dot" />
-                <span className="lp-badge-text">
-                  AI Chatbot — Đại Học Giao Thông Vận Tải
-                </span>
+              <div className="lp-hero-kicker lp-fade-up">
+                <div className="lp-badge">
+                  <span className="lp-badge-dot" />
+                  <span className="lp-badge-text">
+                    AI CHATBOT — ĐẠI HỌC GIAO THÔNG VẬN TẢI
+                  </span>
+                </div>
+                <div className="lp-hero-mini-bot" aria-hidden="true">
+                  <IconBot />
+                </div>
               </div>
 
-              <h1 className="lp-hero-title lp-fade-up lp-fade-up-d1">
-                Trợ lý ảo thông minh{" "}
-                <span className="highlight">
-                  dành riêng cho sinh viên Đại Học Giao Thông Vận Tải
-                </span>
-              </h1>
+              <div className="lp-hero-title-wrap">
+                <span className="lp-sparkle lp-sparkle-hero-1"><IconSparkle /></span>
+                <span className="lp-sparkle lp-sparkle-hero-2"><IconSparkle /></span>
+                <h1 className="lp-hero-title lp-fade-up lp-fade-up-d1">
+                  Tra cứu thông tin
+                  <br />
+                  hỏi đáp học vụ cùng
+                  <br />
+                  <span className="highlight lp-typing-word">UTC-Agent</span>
+                </h1>
+              </div>
 
               <p className="lp-hero-desc lp-fade-up lp-fade-up-d2">
-                Trải nghiệm chatbot AI thế hệ mới, được huấn luyện trên dữ
-                liệu chính thống của Đại Học Giao Thông Vận Tải. Hỗ trợ tra cứu
-                thông tin, giải đáp thắc mắc về học tập, quy chế và chương
-                trình đào tạo — nhanh chóng, chính xác và bảo mật.
+                Hỗ trợ sinh viên tra cứu lịch học, học phí, quy chế, tuyển sinh
+                và thông tin đào tạo từ nguồn dữ liệu chính thống của nhà trường.
               </p>
 
               <div className="lp-hero-actions lp-fade-up lp-fade-up-d3">
@@ -383,9 +399,9 @@ const LandingPage = ({ onNavigateLogin, onNavigateRegister }) => {
 
               <div className="lp-hero-stats lp-fade-up lp-fade-up-d4">
                 <div className="lp-avatar-stack">
-                  <img src="https://i.pravatar.cc/80?img=12" alt="Sinh viên" />
-                  <img src="https://i.pravatar.cc/80?img=32" alt="Sinh viên" />
-                  <img src="https://i.pravatar.cc/80?img=47" alt="Sinh viên" />
+                  <span>SV</span>
+                  <span>UTC</span>
+                  <span>AI</span>
                 </div>
                 <p className="lp-stat-text">
                   Hơn <strong>5.000+</strong> sinh viên đã tin dùng
@@ -398,15 +414,21 @@ const LandingPage = ({ onNavigateLogin, onNavigateRegister }) => {
               <div className="lp-chat-glow" />
               <div className="lp-chat-card">
                 <div className="lp-chat-header">
-                  <div className="lp-chat-avatar">
-                    <IconBot />
+                  <div className="lp-chat-agent">
+                    <div className="lp-chat-avatar">
+                      <IconBot />
+                    </div>
+                    <div>
+                      <p className="lp-chat-name">UTC-AGENT</p>
+                      <p className="lp-chat-status">
+                        <span className="lp-chat-status-dot" />
+                        Trực tuyến
+                      </p>
+                    </div>
                   </div>
-                  <div>
-                    <p className="lp-chat-name">UTC-AGENT</p>
-                    <p className="lp-chat-status">
-                      <span className="lp-chat-status-dot" />
-                      Trực tuyến
-                    </p>
+                  <div className="lp-chat-mode">
+                    <span />
+                    RAG
                   </div>
                 </div>
 
@@ -730,7 +752,7 @@ const LandingPage = ({ onNavigateLogin, onNavigateRegister }) => {
 
             <div className="lp-footer-bottom">
               <p>
-                © 2025 Đại Học Giao Thông Vận Tải.
+                © 2026 Đại Học Giao Thông Vận Tải.
                 <br />
                 Hệ thống Trí tuệ Nhân tạo hỗ trợ đào tạo — UTC-AGENT.
               </p>
