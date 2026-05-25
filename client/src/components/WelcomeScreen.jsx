@@ -25,7 +25,7 @@ const WelcomeScreen = ({ onSendMessage, user }) => {
     {
       icon: FiHelpCircle,
       title: 'Hỏi đáp chung',
-      description: 'Các câu hỏi thường gặp về Học viện',
+      description: 'Các câu hỏi thường gặp về trường',
       query: 'Tôi muốn hỏi về Đại Học Giao Thông Vận Tải',
     },
   ];

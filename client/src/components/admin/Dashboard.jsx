@@ -6,6 +6,7 @@ import {
   FiArrowUp,
   FiArrowDown,
 } from "react-icons/fi";
+import httpClient from "../../utils/httpClient";
 import "./Dashboard.css";
 
 const Dashboard = () => {
@@ -28,20 +29,7 @@ const Dashboard = () => {
     const fetchDashboardStats = async () => {
       try {
         setLoading(true);
-        const token = localStorage.getItem("accessToken");
-
-        const response = await fetch("/api/admin/dashboard/stats", {
-          headers: {
-            Authorization: `Bearer ${token}`,
-            "Content-Type": "application/json",
-          },
-        });
-
-        if (!response.ok) {
-          throw new Error("Failed to fetch dashboard stats");
-        }
-
-        const data = await response.json();
+        const data = await httpClient.get("/api/admin/dashboard/stats");
         const dashboardData = data.data;
 
         setStats({

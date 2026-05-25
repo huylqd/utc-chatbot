@@ -55,7 +55,7 @@ const AdminLogin = ({ onLogin }) => {
             alt="UTCLogo" 
             className="admin-logo" 
           />
-          <h1>Quản trị hệ thống Chatbot KMA</h1>
+          <h1>Quản trị hệ thống Chatbot UTC</h1>
         </div>
         
         {error && (

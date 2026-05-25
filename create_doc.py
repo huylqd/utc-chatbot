@@ -223,7 +223,7 @@ def center_bold(doc, text, size=13, space_after=6):
     run.font.bold = True
     return p
 
-center_bold(doc, 'HỌC VIỆN KỸ THUẬT MẬT MÃ', 14, 4)
+center_bold(doc, 'Đại Học Giao Thông Vận Tải', 14, 4)
 center_bold(doc, 'KHOA CÔNG NGHỆ THÔNG TIN', 14, 4)
 
 p_sep = doc.add_paragraph()
@@ -262,8 +262,8 @@ info_line(doc, 'Sinh viên thực hiện', 'Bùi Đức Trọng')
 info_line(doc, 'Mã sinh viên', 'CT060241')
 info_line(doc, 'Lớp', 'CT6B')
 info_line(doc, 'Chuyên ngành', 'Phát triển phần mềm di động')
-info_line(doc, 'Người hướng dẫn 1', 'ThS. Mạc Văn Hải – Học viện Kỹ thuật Mật mã')
-info_line(doc, 'Người hướng dẫn 2', 'TS. Lê Đức Thuận – Học viện Kỹ thuật Mật mã')
+info_line(doc, 'Người hướng dẫn 1', 'ThS. Mạc Văn Hải – Đại Học Giao Thông Vận Tải')
+info_line(doc, 'Người hướng dẫn 2', 'TS. Lê Đức Thuận – Đại Học Giao Thông Vận Tải')
 
 p_blank2 = doc.add_paragraph()
 p_blank2.paragraph_format.space_after = Pt(30)
@@ -310,8 +310,8 @@ section.right_margin  = Cm(2.0)
 # ═══════════════════════════════════════════════════════════════════════════════
 add_heading1(doc, 'LỜI CAM ĐOAN')
 
-add_normal(doc, 'Em tên là Bùi Đức Trọng, mã sinh viên CT060241, lớp CT6B, chuyên ngành Phát triển phần mềm di động, ngành Công nghệ thông tin, Học viện Kỹ thuật Mật mã.')
-add_normal(doc, 'Em xin cam đoan đồ án tốt nghiệp với đề tài: "Xây dựng hệ thống Chatbot hỗ trợ truy vấn điểm của sinh viên sử dụng kỹ thuật RAG" là công trình nghiên cứu do em thực hiện dưới sự hướng dẫn của ThS. Mạc Văn Hải và TS. Lê Đức Thuận, Học viện Kỹ thuật Mật mã.')
+add_normal(doc, 'Em tên là Bùi Đức Trọng, mã sinh viên CT060241, lớp CT6B, chuyên ngành Phát triển phần mềm di động, ngành Công nghệ thông tin, Đại Học Giao Thông Vận Tải.')
+add_normal(doc, 'Em xin cam đoan đồ án tốt nghiệp với đề tài: "Xây dựng hệ thống Chatbot hỗ trợ truy vấn điểm của sinh viên sử dụng kỹ thuật RAG" là công trình nghiên cứu do em thực hiện dưới sự hướng dẫn của ThS. Mạc Văn Hải và TS. Lê Đức Thuận, Đại Học Giao Thông Vận Tải.')
 add_normal(doc, 'Em xin cam đoan toàn bộ nội dung được trình bày trong đề tài là kết quả nghiên cứu của em, không sao chép từ bất kỳ nguồn nào khác mà không có trích dẫn. Mọi thông tin, tài liệu tham khảo được sử dụng trong đề tài đều được trích dẫn rõ ràng và tuân thủ các quy định về sở hữu trí tuệ. Em xin hoàn toàn chịu trách nhiệm về nội dung của đề tài này.')
 
 p_sign_date = doc.add_paragraph()
@@ -344,7 +344,7 @@ add_heading1(doc, 'LỜI NÓI ĐẦU')
 
 add_normal(doc, 'Trong bối cảnh chuyển đổi số mạnh mẽ hiện nay, giáo dục đại học đang chứng kiến sự mở rộng nhanh chóng về quy mô đào tạo cùng sự gia tăng khổng lồ của lượng thông tin hành chính và học vụ cần xử lý. Sinh viên ngày càng có nhu cầu tra cứu thông tin điểm số, quy chế đào tạo, thủ tục hành chính một cách nhanh chóng, chính xác và không phụ thuộc vào giờ làm việc của các phòng ban.')
 add_normal(doc, 'Phương thức hỗ trợ truyền thống thông qua cán bộ nhân viên hoặc tra cứu thủ công trên các hệ thống phân tán không còn đáp ứng đủ nhu cầu, thường gây lãng phí thời gian và tạo áp lực công việc cho các bộ phận chức năng. Việc xây dựng hệ thống Chatbot hỗ trợ thông minh không chỉ giúp tối ưu hóa trải nghiệm của người dùng mà còn giảm tải đáng kể áp lực cho hệ thống quản lý hành chính của nhà trường.')
-add_normal(doc, 'Đề tài "Xây dựng hệ thống Chatbot hỗ trợ truy vấn điểm của sinh viên sử dụng kỹ thuật RAG" tập trung nghiên cứu và xây dựng một trợ lý ảo phục vụ cộng đồng sinh viên và giảng viên Học viện Kỹ thuật Mật mã, có khả năng tra cứu điểm số theo thời gian thực và giải đáp các vấn đề học vụ, quy chế đào tạo dựa trên kho tài liệu nội bộ.')
+add_normal(doc, 'Đề tài "Xây dựng hệ thống Chatbot hỗ trợ truy vấn điểm của sinh viên sử dụng kỹ thuật RAG" tập trung nghiên cứu và xây dựng một trợ lý ảo phục vụ cộng đồng sinh viên và giảng viên Đại Học Giao Thông Vận Tải, có khả năng tra cứu điểm số theo thời gian thực và giải đáp các vấn đề học vụ, quy chế đào tạo dựa trên kho tài liệu nội bộ.')
 add_normal(doc, 'Đồ án được cấu trúc thành bốn chương chính:')
 add_bullet(doc, 'Chương 1: Tổng quan đề tài và cơ sở lý thuyết – Khảo sát thực trạng các hệ thống Chatbot giáo dục, tìm hiểu về LLM/SLM, kỹ thuật RAG, Graph RAG và kiến trúc Agent.')
 add_bullet(doc, 'Chương 2: Phương pháp và kỹ thuật đề xuất – Mô tả chi tiết kiến trúc hệ thống đa tác tử, chiến lược xây dựng Graph RAG, tiền xử lý dữ liệu và tích hợp LLM.')

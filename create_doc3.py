@@ -145,7 +145,7 @@ add_heading1(doc, 'CHƯƠNG 3. PHÂN TÍCH, THIẾT KẾ VÀ CÀI ĐẶT HỆ TH
 # 3.1
 add_heading2(doc, '3.1. Phân tích hệ thống')
 add_heading3(doc, '3.1.1. Tổng quan và đối tượng sử dụng')
-add_normal(doc, 'Hệ thống Chatbot AI đa mô hình được xây dựng với mục tiêu hỗ trợ tra cứu thông tin học vụ, quy chế đào tạo, thủ tục hành chính và tài liệu nội bộ tại Học viện Kỹ thuật Mật mã thông qua giao tiếp hội thoại tự nhiên. Hệ thống hướng tới hai nhóm người dùng chính:')
+add_normal(doc, 'Hệ thống Chatbot AI đa mô hình được xây dựng với mục tiêu hỗ trợ tra cứu thông tin học vụ, quy chế đào tạo, thủ tục hành chính và tài liệu nội bộ tại Đại Học Giao Thông Vận Tải thông qua giao tiếp hội thoại tự nhiên. Hệ thống hướng tới hai nhóm người dùng chính:')
 add_bullet(doc, 'Người dùng thông thường (sinh viên, giảng viên): Sử dụng Chatbot để tra cứu thông tin, đặt câu hỏi, quản lý lịch sử hội thoại và lưu trữ tài liệu cá nhân.')
 add_bullet(doc, 'Quản trị viên (Admin): Quản lý tài khoản người dùng, cấu hình mô hình AI, quản lý dữ liệu RAG, thiết lập giới hạn hệ thống và theo dõi vận hành.')
 
@@ -572,7 +572,7 @@ add_heading3(doc, '3.3.4. Web App và Mobile App')
 add_normal(doc, 'Web App ReactJS đã được hoàn thiện với đầy đủ chức năng cho cả người dùng và Admin. Ứng dụng giao tiếp với Backend qua API JWT, hỗ trợ streaming response cho chức năng chat AI. Mobile App (React Native) đã được xác định trong kiến trúc tổng thể và là hướng phát triển tiếp theo, sử dụng lại toàn bộ API đã xây dựng.')
 
 add_heading2(doc, '3.4. Tổng kết chương 3')
-add_normal(doc, 'Chương 3 đã trình bày toàn bộ quá trình phân tích, thiết kế và cài đặt hệ thống Chatbot thông minh tại Học viện Kỹ thuật Mật mã. Từ việc xác định rõ yêu cầu qua 11 use case, thiết kế kiến trúc Graph RAG chuyên biệt, xây dựng cơ sở dữ liệu đa tầng (PostgreSQL + MongoDB + Qdrant), đến thiết kế 50 API endpoint đầy đủ và giao diện người dùng thân thiện – hệ thống đã được hiện thực hóa đầy đủ. Kết quả là một nền tảng Chatbot hoàn chỉnh sẵn sàng cho giai đoạn thực nghiệm và đánh giá ở chương tiếp theo.')
+add_normal(doc, 'Chương 3 đã trình bày toàn bộ quá trình phân tích, thiết kế và cài đặt hệ thống Chatbot thông minh tại Đại Học Giao Thông Vận Tải. Từ việc xác định rõ yêu cầu qua 11 use case, thiết kế kiến trúc Graph RAG chuyên biệt, xây dựng cơ sở dữ liệu đa tầng (PostgreSQL + MongoDB + Qdrant), đến thiết kế 50 API endpoint đầy đủ và giao diện người dùng thân thiện – hệ thống đã được hiện thực hóa đầy đủ. Kết quả là một nền tảng Chatbot hoàn chỉnh sẵn sàng cho giai đoạn thực nghiệm và đánh giá ở chương tiếp theo.')
 
 doc.save('document/TAI_LIEU_SAN_PHAM_CHUAN_FORMAT_part3.docx')
 print("Saved part3 – Chuong 3 done.")

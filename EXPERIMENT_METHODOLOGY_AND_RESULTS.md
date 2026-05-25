@@ -86,7 +86,7 @@ Hệ thống được thử nghiệm với 4 mô hình ngôn ngữ lớn:
 
 ### 2.1 Dataset Tài Liệu Hành Chính
 
-Dữ liệu được thu thập từ các phòng ban của Học viện Kỹ thuật Mật mã, bao gồm các văn bản hành chính, quy định, thông tư và tài liệu hướng dẫn.
+Dữ liệu được thu thập từ các phòng ban của Đại Học Giao Thông Vận Tải, bao gồm các văn bản hành chính, quy định, thông tư và tài liệu hướng dẫn.
 
 #### 2.1.1 Thống Kê Bộ Dữ Liệu
 

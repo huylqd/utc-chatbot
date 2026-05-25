@@ -235,7 +235,7 @@ const AdminDashboard = () => {
             <div className="admin-header-left">
               <img
                 src="/img/utc.png"
-                alt="KMA"
+                alt="UTC"
                 className="admin-header-logo"
                 onError={(e) => {
                   e.currentTarget.src = "/assets/kma-logo-outline.svg";
