@@ -73,6 +73,11 @@ class MetadataConfig:
                     "department": "viennghiencuu",
                     "department_vn": "Viện Nghiên Cứu và Hợp Tác Phát Triển",
                     "source_type": "research"
+                },
+                "phongcongtacsinhvien": {
+                    "department": "phongcongtacsinhvien",
+                    "department_vn": "Phòng Cộng Tác Sinh Viên",
+                    "source_type": "student_affairs"
                 }
             },
             "default_metadata": {
@@ -96,7 +101,10 @@ class MetadataConfig:
                     "vanphong": ["văn phòng", "hành chính", "vp"],
                     "khoa": ["khoa", "bộ môn", "giảng dạy"],
                     "thongtinhvktmm": ["thông tin", "giới thiệu", "hvktmm", "học viện"],
-                    "viennghiencuu": ["viện nghiên cứu", "nghiên cứu", "hợp tác", "phát triển", "vnc"]
+                    "viennghiencuu": ["viện nghiên cứu", "nghiên cứu", "hợp tác", "phát triển", "vnc"],
+                    "phongcongtacsinhvien": ["ký túc xá", "ktx", "nội trú", "kí túc xá", "sinh viên nội trú",
+                                            "sổ tay nội trú", "tiêu chí chấm điểm", "phòng cộng tác sinh viên",
+                                            "pctsv", "nội quy ký túc xá", "hạnh kiểm"]
                 }
             },
             "chunk_settings": {

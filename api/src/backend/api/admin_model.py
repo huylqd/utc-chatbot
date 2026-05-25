@@ -14,8 +14,8 @@ from subprocess import run, PIPE, CalledProcessError
 import sys
 sys.path.append(os.path.join(os.path.dirname(__file__), '..', '..'))
 
-from ...llm.model_manager import model_manager, ModelType
-from ...llm.llm_factory import LLMFactory
+from src.llm.model_manager import model_manager, ModelType
+from src.llm.llm_factory import LLMFactory
 from ..auth.dependencies import get_current_admin_user, require_auth
 from ..models.responses import BaseResponse
 

@@ -162,6 +162,7 @@ function ChatApp() {
               "phongdaotao/tiensi": "Phòng Đào tạo - Tiến sĩ",
               phongkhaothi: "Phòng Khảo thí",
               khoa: "Các Khoa",
+              phongcongtacsinhvien: "Phòng cộng tác sinh viên",
               viennghiencuuvahoptacphattrien: "Viện Nghiên cứu",
               thongtinHVKTMM: "Thông tin Học viện",
               test: "Test",

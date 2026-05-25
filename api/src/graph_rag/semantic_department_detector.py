@@ -58,7 +58,8 @@ class SemanticDepartmentDetector:
             'khoa': {'khoa': True, 'common': True},
             'viennghiencuuvahoptacphattrien': {'viennghiencuuvahoptacphattrien': True, 'common': True},
             'thongtinhvktmm': {'thongtinhvktmm': True, 'common': True},
-            'student': {'common': True, 'phongdaotao': True},  # Sinh viên chỉ xem đào tạo + chung
+            'phongcongtacsinhvien': {'phongcongtacsinhvien': True, 'common': True},
+            'student': {'common': True, 'phongdaotao': True, 'phongcongtacsinhvien': True},  # Sinh viên xem đào tạo + cộng tác SV + chung
         }
         
         # Keywords cho fallback detection
@@ -98,6 +99,13 @@ class SemanticDepartmentDetector:
             'thongtinhvktmm': [
                 'học viện', 'hvktmm', 'cơ yếu', 'chuyển đổi số', 'sáng kiến',
                 'giới thiệu', 'lịch sử', 'tổ chức', 'ban giám hiệu'
+            ],
+            'phongcongtacsinhvien': [
+                'ký túc xá', 'ktx', 'nội trú', 'kí túc xá', 'ở nội trú',
+                'sinh viên nội trú', 'sổ tay nội trú', 'tiêu chí chấm điểm',
+                'phòng cộng tác sinh viên', 'cộng tác sinh viên', 'pctsv',
+                'điều kiện đảm bảo chất lượng', 'phòng ở', 'khu nội trú',
+                'vi phạm nội quy', 'nội quy ký túc xá', 'hạnh kiểm'
             ]
         }
         

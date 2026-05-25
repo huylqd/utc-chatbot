@@ -10,10 +10,10 @@ from langgraph.graph import StateGraph, END
 from langgraph.prebuilt import ToolNode
 
 from .state import MyAgentState
-from ..llm.config import get_gemini_llm, get_llm
-from ..llm.model_manager import model_manager, ModelType
-from ..rag import create_rag_tool
-from ..score import get_student_scores, get_student_info, calculate_average_scores
+from src.llm.config import get_gemini_llm, get_llm
+from src.llm.model_manager import model_manager, ModelType
+from src.rag import create_rag_tool
+from src.score import get_student_scores, get_student_info, calculate_average_scores
 
 load_dotenv()
 
@@ -230,14 +230,12 @@ async def call_model_no_human_loop(state: MyAgentState) -> MyAgentState:
         logger.info(f"⚡ FORCING search_kma_regulations: query='{query}', department='{department}'")
         
         try:
-            # Import and call tool directly
-            from ..rag import search_kma_regulations
             logger.info(f"🔧 Calling search_kma_regulations with query: {query[:100]}...")
             logger.info(f"🔧 Department: {department}")
-            
-            result = search_kma_regulations.invoke({
-                "query": query, 
-                "department": department  # None is now valid
+
+            result = rag_tool.invoke({
+                "query": query,
+                "department": department
             })
             
             logger.info(f"📊 Tool result length: {len(result)}")

@@ -12,7 +12,8 @@ from langchain_core.messages import HumanMessage, AIMessage
 print(os.path.abspath(__file__))
 sys.path.append(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))))
 
-from ...agent.supervisor_agent import ReActGraph
+#from ...agent.supervisor_agent import ReActGraph
+from src.agent.supervisor_agent import ReActGraph
 
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)

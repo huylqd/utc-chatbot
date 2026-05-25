@@ -234,7 +234,10 @@ Nội dung:
         
         try:
             response = self.llm.invoke(prompt)
-            summary = response.content.strip()
+            summary = response.text
+            if isinstance(summary, list):
+                summary = " ".join(map(str, summary)) # Chuyển list thành string trước khi strip
+                summary = summary.strip()
             logger.info(f"✅ Generated LLM summary for Community {community_id}: {summary[:100]}...")
             return summary
         except Exception as e:

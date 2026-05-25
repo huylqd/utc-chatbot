@@ -422,35 +422,65 @@ class DepartmentGraphManager:
         
         if target_dept not in self.department_retrievers:
             logger.warning(f"⚠️ No retriever for department {target_dept}, trying to load...")
-            
-            if not self.load_existing_graphs():
+            self.load_existing_graphs()
+
+        # Nếu sau khi load vẫn không có, fallback sang graph chung
+        if target_dept not in self.department_retrievers:
+            fallback_order = ['default', 'utc', 'document_graph']
+            fallback_dept = next((d for d in fallback_order if d in self.department_retrievers), None)
+            if fallback_dept:
+                logger.warning(f"⚠️ No graph for '{target_dept}', falling back to '{fallback_dept}'")
+                target_dept = fallback_dept
+            else:
                 return [
-                    f"Xin lỗi, không tìm thấy cơ sở dữ liệu cho phòng {target_dept}. "
+                    f"Xin lỗi, không tìm thấy cơ sở dữ liệu cho phòng {decision.chosen_department}. "
                     "Vui lòng liên hệ quản trị viên."
                 ], decision
-        
+
+        # Kiểm tra có explicit department preference không
+        explicit_dept = (user_metadata or {}).get('department', '')
+
         try:
             retriever = self.department_retrievers[target_dept]
             results = retriever._get_relevant_documents(query)
-            
+
             logger.info(f"✅ Retrieved {len(results)} results from {target_dept}")
-            
+
+            # Nếu tìm kiếm toàn bộ (không chọn phòng cụ thể) và kết quả rỗng,
+            # thử tìm trong tất cả các graph còn lại
+            if not results and not explicit_dept:
+                logger.info(f"🔍 No results in '{target_dept}', searching all accessible graphs...")
+                all_results = []
+                for dept, dept_retriever in self.department_retrievers.items():
+                    if dept == target_dept:
+                        continue
+                    try:
+                        dept_results = dept_retriever._get_relevant_documents(query)
+                        if dept_results:
+                            all_results.extend(dept_results)
+                            logger.info(f"   ✅ Found {len(dept_results)} results in '{dept}'")
+                    except Exception:
+                        continue
+                if all_results:
+                    results = all_results
+
             return [doc.page_content for doc in results[:k]], decision
-            
+
         except Exception as e:
             logger.error(f"❌ Error querying {target_dept}: {e}")
-            
-            # Fallback: try document_graph department
-            if target_dept != 'document_graph' and 'document_graph' in self.department_retrievers:
-                logger.info("🔄 Fallback to document_graph department")
-                logger.info(f"🗂️ USING GRAPH: DOCUMENT_GRAPH (fallback from {target_dept.upper()})")
-                try:
-                    retriever = self.department_retrievers['document_graph']
-                    results = retriever._get_relevant_documents(query)
-                    return [doc.page_content for doc in results[:k]], decision
-                except Exception as e2:
-                    logger.error(f"❌ Fallback also failed: {e2}")
-            
+
+            # Fallback: thử các graph chung còn lại
+            fallback_order = ['default', 'utc', 'document_graph']
+            for fallback in fallback_order:
+                if fallback != target_dept and fallback in self.department_retrievers:
+                    logger.info(f"🔄 Fallback to '{fallback}' from '{target_dept}'")
+                    try:
+                        retriever = self.department_retrievers[fallback]
+                        results = retriever._get_relevant_documents(query)
+                        return [doc.page_content for doc in results[:k]], decision
+                    except Exception as e2:
+                        logger.error(f"❌ Fallback '{fallback}' also failed: {e2}")
+
             return [
                 f"Xin lỗi, đã xảy ra lỗi khi tìm kiếm thông tin: {str(e)}"
             ], decision

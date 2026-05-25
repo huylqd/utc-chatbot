@@ -9,6 +9,42 @@
                 "generateContent",
                 "streamGenerateContent"
             ]
+        },
+        {
+            "name": "gemini-2.5-flash-tts",
+            "display_name": "gemini-2.5-flash-tts (Custom)",
+            "description": "Custom configured model",
+            "supported_generation_methods": [
+                "generateContent",
+                "streamGenerateContent"
+            ]
+        },
+        {
+            "name": "gemini-2.5-flash-lite",
+            "display_name": "gemini-2.5-flash-lite (Custom)",
+            "description": "Custom configured model",
+            "supported_generation_methods": [
+                "generateContent",
+                "streamGenerateContent"
+            ]
+        },
+        {
+            "name": "gemini-3.1-flash-lite-preview",
+            "display_name": "gemini-3.1-flash-lite-preview (Custom)",
+            "description": "Custom configured model",
+            "supported_generation_methods": [
+                "generateContent",
+                "streamGenerateContent"
+            ]
+        },
+        {
+            "name": "gemini-pro",
+            "display_name": "gemini-pro (Custom)",
+            "description": "Custom configured model",
+            "supported_generation_methods": [
+                "generateContent",
+                "streamGenerateContent"
+            ]
         }
     ]
 }

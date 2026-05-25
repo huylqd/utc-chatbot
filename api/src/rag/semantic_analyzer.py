@@ -59,15 +59,19 @@ class SemanticQueryAnalyzer:
     def _encode_text(self, texts: List[str]) -> np.ndarray:
         """Encode texts using the appropriate model"""
         model = self._get_model()
-        
+
         if self.model_type == "ollama":
-            # Ollama embeddings return list of embeddings
             if isinstance(texts, str):
                 texts = [texts]
-            embeddings = model.embed_documents(texts)
-            return np.array(embeddings)
+            try:
+                embeddings = model.embed_documents(texts)
+                return np.array(embeddings)
+            except ConnectionError:
+                print("⚠️  Ollama not running, falling back to SentenceTransformer...")
+                self.model = SentenceTransformer('paraphrase-multilingual-MiniLM-L12-v2')
+                self.model_type = "sentence_transformer"
+                return self.model.encode(texts)
         else:
-            # SentenceTransformer 
             return model.encode(texts)
     
     def _initialize_templates(self):

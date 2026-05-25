@@ -1,8 +1,8 @@
 from datetime import datetime
 from typing import List, Optional
-
+from typing import Any
 from bson import ObjectId
-from pydantic import BaseModel, Field, GetJsonSchemaHandler
+from pydantic import BaseModel, Field, GetJsonSchemaHandler, field_validator
 from pydantic.json_schema import JsonSchemaValue
 
 
@@ -119,6 +119,26 @@ class QuickMessageResponse(BaseModel):
     model_config = {
         "populate_by_name": True
     }
+
+    # Thêm validator này để tự động ép kiểu list của Gemini thành string
+    @field_validator("content", mode="before")
+    @classmethod
+    def process_gemini_content(cls, v: Any) -> str:
+        # Nếu dữ liệu vào là một list (chứa các dict như {'type': 'text', 'text': '...'})
+        if isinstance(v, list):
+            # Trích xuất giá trị 'text' từ mỗi phần tử và nối chúng lại
+            return "".join([
+                part.get("text", "") if isinstance(part, dict) else str(part) 
+                for part in v
+            ])
+        
+        # Nếu biến truyền vào là một object có sẵn thuộc tính .content (ví dụ AIMessage của LangChain)
+        if hasattr(v, 'content'):
+            # Đệ quy gọi lại chính hàm này trong trường hợp content bên trong lại là list
+            return cls.process_gemini_content(v.content)
+
+        # Nếu đã là string hoặc các kiểu khác, ép về string
+        return str(v)
 
 class ConversationResponse(BaseModel):
     id: str = Field(alias="_id")

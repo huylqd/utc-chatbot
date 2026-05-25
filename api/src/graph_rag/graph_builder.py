@@ -311,6 +311,12 @@ class DocumentGraph:
     def load_graph(self, filepath: str):
         """Load graph from file with community metadata"""
         import pickle
+        import langchain_core.messages.base as _lcmb
+        # Compatibility shim: older pickles reference TextAccessor which was removed
+        if not hasattr(_lcmb, 'TextAccessor'):
+            class TextAccessor:
+                pass
+            _lcmb.TextAccessor = TextAccessor
         with open(filepath, 'rb') as f:
             data = pickle.load(f)
             self.graph = data['graph']

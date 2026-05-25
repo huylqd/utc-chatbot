@@ -77,6 +77,11 @@
       "department": "viennghiencuu",
       "department_vn": "Viện Nghiên Cứu và Hợp Tác Phát Triển",
       "source_type": "research_collaboration"
+    },
+    "phongcongtacsinhvien": {
+      "department": "phongcongtacsinhvien",
+      "department_vn": "Phòng Cộng Tác Sinh Viên",
+      "source_type": "student_affairs"
     }
   },
   "default_metadata": {
@@ -99,7 +104,8 @@
       "phongkhaothi": ["phòng khảo thí", "khảo thí", "thi cử", "examination", "đảm bảo chất lượng", "hội đồng", "coi thi", "chấm thi", "tổ chức thi", "kỳ thi", "phòng thi", "giám thị", "quy định thi"],
       "khoa": ["khoa", "bộ môn", "giảng dạy", "academic", "department", "ngành", "chuyên ngành", "an toàn thông tin", "attt", "chương trình đào tạo", "kế hoạch học tập", "học phần", "tín chỉ", "môn học", "mã học phần", "khối lượng kiến thức", "chương trình giáo dục", "mục tiêu đào tạo"],
       "thongtinhvktmm": ["thông tin", "giới thiệu", "hvktmm", "học viện", "general info"],
-      "viennghiencuu": ["viện nghiên cứu", "nghiên cứu", "hợp tác", "phát triển", "vnc", "research collaboration"]
+      "viennghiencuu": ["viện nghiên cứu", "nghiên cứu", "hợp tác", "phát triển", "vnc", "research collaboration"],
+      "phongcongtacsinhvien": ["ký túc xá", "ktx", "nội trú", "kí túc xá", "sinh viên nội trú", "sổ tay nội trú", "tiêu chí chấm điểm kí túc xá", "phòng cộng tác sinh viên", "pctsv", "nội quy ký túc xá", "hạnh kiểm"]
     },
     "research_types": {
       "project": ["đề tài", "dự án", "project"],
