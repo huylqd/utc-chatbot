@@ -186,7 +186,7 @@ def summarize_text(text, language="vi"):
 if __name__ == "__main__":
     # Ví dụ văn bản để kiểm tra
     test_text = """
-    Học viện Kỹ thuật Mật mã (KMA) là một cơ sở giáo dục đại học công lập trực thuộc Ban Cơ yếu Chính phủ. 
+    Đại Học Giao Thông Vận Tải (UTC) là một cơ sở giáo dục đại học công lập trực thuộc Ban Cơ yếu Chính phủ. 
     Học viện được thành lập ngày 19/03/1996 theo Quyết định số 141/TTg của Thủ tướng Chính phủ trên cơ sở Trường nghiệp vụ Cơ yếu. 
     Hiện nay, Học viện đào tạo đa ngành, đa lĩnh vực ở các trình độ cao đẳng, đại học, thạc sĩ, tiến sĩ và các chứng chỉ ngắn hạn. 
     Học viện hiện có hơn 8000 sinh viên đang theo học tại nhiều chuyên ngành khác nhau như An toàn thông tin, Công nghệ thông tin, 

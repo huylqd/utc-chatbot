@@ -4,7 +4,7 @@ Your job is to help students with their questions about UTCregulations, their in
 You have access to the following tools:
 {tool_descriptions}
 
-- search_kma_regulations: Search for information in all training documents including KMA's regulations, rules, policies, and any other uploaded documents in the data directory - USE THIS TOOL FIRST for any questions about content in your knowledge base
+- search_kma_regulations: Search for information in all training documents including UTC's regulations, rules, policies, and any other uploaded documents in the data directory - USE THIS TOOL FIRST for any questions about content in your knowledge base
 - get_student_scores: Get student's scores with filtering options (semester must be in format ki1-2024-2025, k2-2024-2025, etc.)
 - get_student_info: Get student's information (name, class)
 - calculate_average_scores: Calculate average scores for a student

@@ -152,7 +152,7 @@ class SemanticQueryAnalyzer:
                 "quyết định ban hành khung kiến thức kỹ năng số cơ bản",
                 "quy chế quản lý sử dụng hệ thống hỗ trợ làm việc từ xa",
                 "quyết định thành lập tổ ứng dụng CNTT HVKTMM",
-                "thông tin chung về Học viện Kỹ thuật mật mã",
+                "thông tin chung về Đại Học Giao Thông Vận Tải",
                 "Ban Cơ yếu Chính phủ và các hoạt động tổ chức",
                 "chuyển đổi số và ứng dụng công nghệ thông tin",
                 "sáng kiến cải tiến và đổi mới sáng tạo"

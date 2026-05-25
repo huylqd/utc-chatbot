@@ -28,7 +28,7 @@ class DepartmentFilterService:
         },
         'thongtinHVKTMM': {
             'display_name': 'Thông tin HVKTMM',
-            'description': 'Thông tin chung về Học viện Kỹ thuật Mật mã'
+            'description': 'Thông tin chung về Đại Học Giao Thông Vận Tải'
         },
         'viennghiencuuvahoptacphattrien': {
             'display_name': 'Viện Nghiên cứu',

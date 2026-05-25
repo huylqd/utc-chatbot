@@ -1,6 +1,6 @@
 """
 UTCRegulations Assistant - A chatbot for answering questions about 
-regulations at the Academy of Cryptographic Techniques (KMA).
+regulations at the Academy of Cryptographic Techniques (UTC).
 """
 
 # Lazy imports - avoid circular imports when imported as api.src.rag

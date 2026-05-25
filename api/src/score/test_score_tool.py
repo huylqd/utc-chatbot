@@ -176,7 +176,7 @@ async def test_rag_integration():
     if not os.path.exists(regulation_file):
         print("Creating sample regulation file...")
         with open(regulation_file, "w", encoding="utf-8") as f:
-            f.write("Academic regulations at KMA:\n")
+            f.write("Academic regulations at UTC:\n")
             f.write("1. Students must maintain a GPA of at least 2.0 to graduate.\n")
             f.write("2. All students must complete at least 120 credits to graduate.\n")
             f.write("3. To stay in good academic standing, students must maintain a 2.0 GPA each semester.\n")

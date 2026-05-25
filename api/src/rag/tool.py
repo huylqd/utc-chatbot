@@ -1,7 +1,7 @@
 """
-RAG (Retrieval Augmented Generation) tool for accessing all documents in KMA's knowledge base.
+RAG (Retrieval Augmented Generation) tool for accessing all documents in UTC's knowledge base.
 
-This tool allows querying information from all documents in the system, including KMA's regulations, 
+This tool allows querying information from all documents in the system, including UTC's regulations, 
 rules, policies, and any other uploaded documents in the data directory.
 """
 

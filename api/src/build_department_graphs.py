@@ -120,7 +120,7 @@ if load_success:
         "Quy định về điểm TOEIC cần thiết để tốt nghiệp",
         "Chương trình đào tạo ngành ATTT", 
         "Quy trình nghiên cứu khoa học",
-        "Thông tin về Học viện Kỹ thuật mật mã"
+        "Thông tin về Đại Học Giao Thông Vận Tải"
     ]
     
     for query in test_queries:
